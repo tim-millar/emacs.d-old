@@ -1,0 +1,48 @@
+
+;; ----- smex-history -----
+(
+ load-theme
+ ruby-mode
+ dynamic-completion-mode
+ shell
+ delete-trailing-whitespace
+ hexl-mode
+ count-words
+)
+
+;; ----- smex-data -----
+(
+ (eval-region . 8)
+ (shell . 78)
+ (list-packages . 8)
+ (recover-session . 1)
+ (recover-file . 1)
+ (inf-ruby . 16)
+ (term . 3)
+ (robe-mode . 2)
+ (emacs-version . 1)
+ (erc . 4)
+ (markdown-mode . 3)
+ (rvm-use . 1)
+ (apropos . 3)
+ (delete-trailing-whitespace . 6)
+ (untabify . 1)
+ (send-invisible . 10)
+ (eval-buffer . 1)
+ (literate-haskell-mode . 1)
+ (recover-this-file . 1)
+ (undo-tree-visualize . 6)
+ (count-words . 34)
+ (dired-smart-shell-command . 1)
+ (woman . 8)
+ (WoMan-next-manpage . 4)
+ (linum-mode . 3)
+ (hexl-mode . 3)
+ (ispell-buffer . 3)
+ (feature-mode . 1)
+ (grep . 5)
+ (ruby-mode . 8)
+ (inf-ruby-console-rails . 4)
+ (dynamic-completion-mode . 2)
+ (load-theme . 1)
+)

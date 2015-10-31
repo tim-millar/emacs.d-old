@@ -1,0 +1,330 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/home/timothymillar/Code/otb/otb_admin_app/app/" . "controllers/")
+ ("/home/timothymillar/Code/otb/otb_admin_app/spec/" . "lib/")
+ ("/home/timothymillar/Code/otb/otb_admin_app/" . "spec/")
+ ("/home/timothymillar/Code/otb/otb_www_app/app/views/checkout/form_parts/sections/" . "payment_options/")
+ ("/home/timothymillar/Code/otb/otb_www_app/app/views/checkout/form_parts/" . "sections/")
+ ("/home/timothymillar/Code/otb/otb_www_app/app/views/checkout/" . "form_parts/")
+ ("/home/timothymillar/Code/otb/otb_www_app/app/views/" . "checkout/")
+ ("/home/timothymillar/Code/otb/otb_www_app/app/" . "models/")
+ ("/home/timothymillar/.emacs.d/elpa/yasnippet-20151011.1823/snippets/" . "ruby-mode/")
+ ("/home/timothymillar/.emacs.d/elpa/yasnippet-20151011.1823/" . "snippets/")
+ ("/home/timothymillar/.emacs.d/elpa/" . "yasnippet-20151011.1823/")
+ ("/home/timothymillar/.emacs.d/" . "elpa/")
+ ("/home/timothymillar/Code/" . "otb/")
+ ("/home/timothymillar/my-stuff/haskell/rwh/" . "ch06/")
+ ("/sudo::/etc/" . "mysql/")
+ ("/usr/" . "sbin/")
+ ("/home/timothymillar/Code/otb/otb_www_app/vendor/bundle/ruby/2.1.0/" . "gems/")
+ ("/home/timothymillar/Code/otb/otb_www_app/vendor/bundle/ruby/" . "2.1.0/")
+ ("/home/timothymillar/Code/otb/otb_www_app/vendor/bundle/" . "ruby/")
+ ("/home/timothymillar/Code/otb/otb_www_app/vendor/" . "bundle/")
+ ("/home/timothymillar/Code/otb/" . "otb_www_app/")
+ ("/home/timothymillar/Code/otb/otb_www_app/" . "config/")
+ ("/home/timothymillar/.rvm/" . "scripts/")
+ ("/home/timothymillar/my-stuff/otb-academy-oct-2015/xtreme-startup/" . "spec/")
+ ("/home/timothymillar/my-stuff/pool-tournament/pool_tournament/spec/" . "models/")
+ ("/home/timothymillar/my-stuff/pool-tournament/pool_tournament/db/" . "migrate/")
+ ("/home/timothymillar/my-stuff/pool-tournament/pool_tournament/app/views/" . "matches/")
+ ("/home/timothymillar/my-stuff/pool-tournament/pool_tournament/lib/" . "tasks/")
+ ("/home/timothymillar/my-stuff/pool-tournament/pool_tournament/app/" . "views/")
+ ("/home/timothymillar/my-stuff/pool-tournament/pool_tournament/" . "db/")
+ ("/home/timothymillar/my-stuff/ruby/scratch/" . "tournament/")
+ ("/home/timothymillar/my-stuff/pool-tournament/tournament_tree/" . "spec/")
+ ("/home/timothymillar/my-stuff/pool-tournament/" . "tournament_tree/")
+ ("/home/timothymillar/my-stuff/ruby/scratch/tournament/" . "lib/")
+ ("/home/timothymillar/my-stuff/otb-academy-oct-2015/shouty/features/" . "step_definitions/")
+ ("/home/timothymillar/my-stuff/otb-academy-oct-2015/shouty/" . "lib/")
+ ("/home/timothymillar/Downloads/tmp/test8/" . ".git/")
+ ("/home/timothymillar/my-stuff/otb-academy-oct-2015/bottles/" . "lib/")
+ ("/home/timothymillar/my-stuff/otb-academy-oct-2015/harry_potter/" . "spec/")
+ ("/home/timothymillar/my-stuff/otb-academy-oct-2015/bowling/" . "spec/")
+ ("/home/timothymillar/my-stuff/otb-academy-oct-2015/string_calculator/" . "spec/")
+ ("/home/timothymillar/my-stuff/otb-academy-oct-2015/" . "shouty/")
+ ("/home/timothymillar/my-stuff/haskell/cis194/" . "w05/")
+ ("/home/timothymillar/my-stuff/haskell/" . "rwh/")
+ ("/home/timothymillar/my-stuff/otb-academy-oct-2015/the-language/" . "spec/")
+ ("/home/timothymillar/my-stuff/ruby/design-patterns/" . "ch03/")
+ ("/home/timothymillar/my-stuff/ruby/" . "scratch/")
+ ("/home/timothymillar/my-stuff/" . "org/")
+ ("/etc/" . "nginx/")
+ ("/" . "usr/")
+ ("/home/timothymillar/" . ".emacs.d/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/home/timothymillar/Code/otb/otb_www_app/config/"
+ "/home/timothymillar/Code/otb/otb_admin_app/config/"
+ "/home/timothymillar/Code/otb/otb_www_app/app/views/checkout/"
+ "/home/timothymillar/Code/otb/otb_admin_app/spec/lib/"
+ "/home/timothymillar/Code/otb/otb_admin_app/app/controllers/"
+ "/home/timothymillar/Code/otb/otb_admin_app/spec/modules/"
+ "/home/timothymillar/Code/otb/otb_www_app/app/models/"
+ "/home/timothymillar/Code/otb/otb_www_app/app/views/checkout/form_parts/sections/payment_options/"
+ "/home/timothymillar/.emacs.d/elpa/yasnippet-20151011.1823/snippets/ruby-mode/"
+ "/home/timothymillar/my-stuff/ruby/pooder/ch02/"
+ "/home/timothymillar/my-stuff/org/"
+ "/etc/nginx/"
+ "/home/timothymillar/my-stuff/haskell/rwh/ch06/"
+ "/sudo::/etc/mysql/"
+ "/sudo:root@/"
+ "/usr/sbin/"
+ "/etc/mysql/"
+ "/home/timothymillar/Code/otb/otb_www_app/"
+ "/home/timothymillar/Code/otb/otb_www_app/vendor/bundle/ruby/2.1.0/gems/curb-0.8.1/ext/"
+ "/home/timothymillar/"
+ "/home/timothymillar/.rvm/scripts/"
+ "/etc/"
+ "/home/timothymillar/.rvm/config/"
+ "/home/timothymillar/my-stuff/otb-academy-oct-2015/xtreme-startup/"
+ "/home/timothymillar/my-stuff/otb-academy-oct-2015/xtreme-startup/spec/"
+ "/home/timothymillar/my-stuff/haskell/cis194/w06/"
+ "/home/timothymillar/my-stuff/haskell/cis194/w05/"
+ "/home/timothymillar/my-stuff/pool-tournament/pool_tournament/"
+ "/home/timothymillar/my-stuff/pool-tournament/pool_tournament/db/migrate/"
+ "/home/timothymillar/my-stuff/pool-tournament/pool_tournament/spec/models/"
+ "/home/timothymillar/my-stuff/pool-tournament/pool_tournament/lib/"
+ "/home/timothymillar/my-stuff/pool-tournament/pool_tournament/db/"
+ "/home/timothymillar/my-stuff/pool-tournament/pool_tournament/app/views/matches/"
+ "/home/timothymillar/my-stuff/pool-tournament/pool_tournament/app/models/"
+ "/home/timothymillar/my-stuff/pool-tournament/pool_tournament/app/controllers/"
+ "/home/timothymillar/my-stuff/pool-tournament/pool_tournament/spec/controllers/"
+ "/home/timothymillar/.emacs.d/"
+ "/home/timothymillar/my-stuff/ruby/scratch/tournament/lib/"
+ "/home/timothymillar/my-stuff/pool-tournament/tournament_tree/spec/"
+ "/home/timothymillar/my-stuff/pool-tournament/tournament_tree/lib/"
+ "/home/timothymillar/my-stuff/pool-tournament/pool_tournament/config/"
+ "/home/timothymillar/my-stuff/pool-tournament/pool_tournament/app/helpers/"
+ "/home/timothymillar/my-stuff/pool-tournament/pool_tournament/app/views/index/"
+ "/home/timothymillar/my-stuff/pool-tournament/pool_tournament/lib/tasks/"
+ "/home/timothymillar/my-stuff/pool-tournament/"
+ "/home/timothymillar/my-stuff/ruby/scratch/tournament/"
+ "/home/timothymillar/my-stuff/ruby/scratch/tournament/spec/"
+ "/home/timothymillar/my-stuff/ruby/scratch/"
+ "/home/timothymillar/my-stuff/otb-academy-oct-2015/shouty/lib/"
+ "/home/timothymillar/my-stuff/otb-academy-oct-2015/shouty/features/step_definitions/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "application.yml"
+ "application.yml.example"
+ "rules.yml"
+ "_multiple_payment_options.sv.html.erb"
+ "_single_payment_option.html.erb"
+ "order_processor_spec.rb"
+ "order_controller.rb"
+ "application_controller.rb"
+ "voucher_validations_spec.rb"
+ "_multiple_payment_options.en.html.erb"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/home/timothymillar/Code/otb/otb_www_app/config/" (22064 58090 566815 396000) "boot.rb" "cucumber.yml" "zanox_tracking.yml.example" "zanox_tracking.yml" "locales/" "unicorn.rb" "i18n-js.yml" "newrelic.yml" "routes.rb" "environment.rb" "./" "database.yml" "newrelic.yml.example" "phone_number.yml" "deploy.rb" "application.rb" "servers/" "external_apis.yml" "deploy/" "session_cam_tracking.yml" "../" "application.yml" "linguist.rb" "HotelSearch.conf.template.erb" ".htpasswd" "environments/" "application.yml.example" "initializers/")
+
+ ("/home/timothymillar/Code/" (22062 12150 902211 514000) "otb/" "./" "../")
+
+ ("/home/timothymillar/Code/otb/otb_www_app/" (22064 55769 704402 512000) ".scss-lint.yml" ".git/" "features/" "bin/" "config.ru" "lib/" "tags" ".bundle/" "vendor/" "db/" "spec/" "log/" "tmp/" "public/" ".gitignore" "./" ".ruby-version" "script/" "Rakefile" "config/" "README.md" "Capfile" ".simplecov" "package.json" "Gemfile.lock" "setup.sh" "../" "app/" ".rspec" "setup/" "Procfile" "Gemfile")
+
+ ("/home/timothymillar/Code/otb/otb_www_app/app/controllers/" (22064 55769 704402 512000) "three_d_secure/" "api/" "virtual_travel_agent_controller.rb" "ppc_controller.rb" "bookmarks_controller.rb" "searches_controller.rb" "basket/" "points_of_interest_controller.rb" "tds_redirects_controller.rb" "light_box_controller.rb" "deal_recommendations_controller.rb" "flight_and_hotel_searches_controller.rb" "personalisation_controller.rb" "deal_finder_controller.rb" "affiliate_harness/" "checkout_controller.rb" "dynamic_deals_controller.rb" "preferences_controller.rb" "./" "bookmarks/" "deals/" "previous_searches_controller.rb" "popups_controller.rb" "closest_beaches_controller.rb" "group_bookings_controller.rb" "ajax_controller.rb" "api_controller.rb" "card_charges_controller.rb" "deal_searches_controller.rb" "destinations_controller.rb" "static_pages_controller.rb" "site_search_controller.rb" "hotels_controller.rb" "living_style_guide_controller.rb" "flight_searches_controller.rb" "trip_advisor_reviews_controller.rb" "../" "customer_email_catchers_controller.rb" "basket_controller.rb" "application_controller.rb" "luxury_controller.rb" "hotels/" "hotel_searches_controller.rb")
+
+ ("/home/timothymillar/Code/otb/otb_admin_app/config/" (22064 44865 588574 208000) "holiday_extras.yml" "boot.rb" "librarian.yml.example" "flight_governor.yml" "online_checkin.yml.example" "holiday_extras.yml.example" "merchants.yml.example" "corporate_pay.yml.example" "locales/" "unicorn.rb" "resort_taxis.yml" "multicom.yml.example" "resque.yml.example" "rules.yml" "rules.yml.example" "newrelic.yml" "flight_governor.yml.example" "routes.rb" "atol.yml" "resque.yml" "environment.rb" "./" "database.yml.example" "database.yml" "newrelic.yml.example" "deploy.rb" "money.yml" "merchants.yml" "responsys_ftp.yml.example" "corporate_pay.yml" "responsys_ftp.yml" "online_checkin.yml" "constants.yml" "preinitializer.rb" "deploy/" "../" "application.yml" "resort_taxis.yml.example" ".htpasswd" "environments/" "multicom.yml" "application.yml.example" "librarian.yml" "auto_ship.yml" "initializers/")
+
+ ("/home/timothymillar/Code/otb/" (22063 40040 829009 627000) "otb_middleware_app/" "unicorns/" "./" "otb_admin_app/" "otb_payments_app/" "otb_www_app/" "../")
+
+ ("/home/timothymillar/Code/otb/otb_www_app/app/views/checkout/" (22064 42024 231336 473000) "_feefo_klarna.nb.html.erb" "form_parts/" "_eligible_credit.html.erb" "order_request/" "_hidden_payment_option.html.erb" "basket/" "_paypal_info.html.erb" "_multiple_payment_options.sv.html.erb" "_inside_threshold.html.erb" "_single_payment_option.html.erb" "_basket_items.html.erb" "late_booking.html.erb" "_low_deposit_info.html.erb" "_card.html.erb" "./" "_free_hotel_cancellation.html.erb" "_paypal_instalments.html.erb" "_air_passenger_duty.sv.html.erb" "_feefo_klarna.sv.html.erb" "_feefo_klarna.en.html.erb" "_air_passenger_duty.en.html.erb" "_basket.html.erb" "order_request.html.erb" "card_fail.html.erb" "../" "index.html.erb" "_multiple_payment_options.en.html.erb" "_error_messages.html.erb" "paypal_cancelled.html.erb" "_outside_threshold.html.erb" "_disabled_credit.html.erb")
+
+ ("/home/timothymillar/Code/otb/otb_admin_app/spec/lib/" (22062 12125 882185 263000) "online_checkin_spec.rb" "order_advanced_search_spec.rb" "casperjs/" "deposit_collection_report_spec.rb" "baggage_spec.rb" "ticket_details_mapper_spec.rb" "otp_order_profit_checker_spec.rb" "transfer_from_orderline_spec.rb" "log_bucket_spec.rb" "booking_element_price_adjuster_spec.rb" "contact_details_validator_spec.rb" "filter/" "apd_amendment/" "flight_element_spec.rb" "order_spank_spec.rb" "atol_certificates/" "tasks/" "transfer_time_spec.rb" "booking_choice_spec.rb" "apd_amendment_spec.rb" "transfer_defaults_spec.rb" "deposit_processor_spec.rb" "customer_relationship_management/" "./" "autobook_logger_spec.rb" "refundable_cards_spec.rb" "hotel_suppliers/" "watir_spec.rb" "customer_booking_email_spec.rb" "flight_booking_cost_adjuster_spec.rb" "queue_system/" "casperjs_spec.rb" "balance_processor_spec.rb" "live_book/" "bulk_update_hotel_booking_spec.rb" "multicom/" "order_processor/" "customer_myb_domain_spec.rb" "money_formatter_spec.rb" "balance_collection_report_spec.rb" "setfire_extensions_spec.rb" "bulk_updater/" "autobook_error/" "../" "flight_operator_api/" "livebook/" "autobook/" "fraudulent_order_matcher_spec.rb" "currency_converter_spec.rb" "online_checkin/" "voucher_validations_spec.rb" "order_processor_spec.rb" "travelport/" "ticket_details_expander_spec.rb" "passenger_pool_spec.rb" "autoship_validator_spec.rb")
+
+ ("/home/timothymillar/Code/otb/otb_admin_app/app/controllers/" (22062 12125 774185 151000) "change_request_special_assistances_controller.rb" "api/" "url_redirect_rule_controller.rb" "company_card_transactions_controller.rb" "payments_controller.rb" "hotel_booking_controller.rb" "extra_operator_product_controller.rb" "flight_operator_identifier_controller.rb" "override_reason_controller.rb" "extra_bookings_controller.rb" "virtual_cards_controller.rb" "booking_error_type_controller.rb" "cancellation_proof_uploads_controller.rb" "document_templates_controller.rb" "server_status_controller.rb" "authentication_override_controller.rb" "documents_controller.rb" "deposit_collector_controller.rb" "insurance_booking_controller.rb" "booking_error_area_controller.rb" "payment_controller.rb" "variable_controller.rb" "chargeback_reason_controller.rb" "table_editor_controller.rb" "flight_operator_controller.rb" "fraudulent_values_controller.rb" "balance_reminder_controller.rb" "./" "flight_booking_controller.rb" "flight_operator_data_supplier_controller.rb" "contact_details_controller.rb" "date_formats_controller.rb" "flight_operator_in_flight_extra_type_controller.rb" "sessions_controller.rb" "email_templates_controller.rb" "confirmation_email_controller.rb" "booking_errors_controller.rb" "change_requests_controller.rb" "access_roles_controller.rb" "customer_cards_controller.rb" "transfer_operator_controller.rb" "cancellation_reason_controller.rb" "document_template_category_controller.rb" "issues_controller.rb" "staff_hotel_deals_controller.rb" "email_layouts_controller.rb" "atol_certificates_controller.rb" "hotel_supplier_controller.rb" "balance_due_dates_controller.rb" "ticket_type_controller.rb" "error_message_controller.rb" "admin_controller.rb" "../" "transfer_booking_controller.rb" "access_groups_controller.rb" "order_controller.rb" "accesses_controller.rb" "flight_data_supplier_controller.rb" "application_controller.rb" "staff_back_end_controller.rb" "comp_code_controller.rb" "extra_operator_controller.rb" "expressions_controller.rb" "balance_collector_controller.rb" "operator_currencies_controller.rb")
+
+ ("/home/timothymillar/Code/otb/otb_admin_app/spec/modules/" (22062 12125 886185 268000) "./" "../" "voucher_validations_spec.rb")
+
+ ("/home/timothymillar/Code/otb/otb_admin_app/spec/" (22062 12125 890185 272000) "modules/" "builders/" "decorators/" "observers/" "spec.opts" "lib/" "spec_helper_lite.rb" "presenters/" "adaptors/" "controllers/" "./" "helpers/" "serializers/" "script/" "queries/" "spec_helper.rb" "models/" "rcov.opts" "factories/" "jobs/" "support/" "../" "on_the_beach/" "services/" "fixtures/" "spec_helper_active_record.rb" "mailers/")
+
+ ("/home/timothymillar/Code/otb/otb_admin_app/" (22062 13671 715362 171000) ".git/" "run_balance_processing_task.sh" "bin/" "node_modules/" "lib/" ".bundle/" "vendor/" "db/" "spec/" "log/" "tmp/" "public/" ".gitignore" "./" ".ruby-version" "script/" "Rakefile" "config/" "README.md" "Capfile" "package.json" "Gemfile.lock" "setup.sh" "../" "app/" "setup/" "run_deposits_processing_task.sh" "Procfile" "Gemfile")
+
+ ("/home/timothymillar/Code/otb/otb_admin_app/app/" (22062 12125 794185 171000) "builders/" "decorators/" "observers/" "streamlined/" "presenters/" "adaptors/" "controllers/" "./" "helpers/" "serializers/" "views/" "queries/" "models/" "jobs/" "../" "on_the_beach/" "services/" "mailers/")
+
+ ("/home/timothymillar/Code/otb/otb_admin_app/app/models/" (22062 12125 786185 162000) "change_request.rb" "ticket_details.rb" "transfer_booking.rb" "confirmation_email_pdf.rb" "order_finder.rb" "currency.rb" "country_domain.rb" "order_finder/" "currency_rate.rb" "web_service/" "auto_ship_log.rb" "extra_booking.rb" "atol_charge_factory.rb" "insurance_passenger.rb" "hotel_special_request_type.rb" "change_request_pay_balance.rb" "change_request_change_passenger.rb" "flight_operator_in_flight_extra_type.rb" "comment.rb" "ticket_type.rb" "email_log.rb" "booking_error_agent.rb" "virtual_card.rb" "batch_mailer.rb" "in_flight_extra_type.rb" "email_layout.rb" "order_counter.rb" "transfer_operators/" "change_request_type.rb" "operator_password.rb" "payment_validator.rb" "country_currency.rb" "bucket_log.rb" "transfer_hotel.rb" "documented_complaint.rb" "change_request_special_request.rb" "flight_operator_rules/" "tds_fraud_check.rb" "extra_charge.rb" "access.rb" "access_cache_sweeper.rb" "order_state_machine.rb" "document_template.rb" "obscenity.rb" "booking_with_resort_taxi.rb" "change_request_full_cancellation.rb" "resort_taxis_log.rb" "override_log.rb" "klarna/" "add_invoice_and_charges.rb" "insurance_booking.rb" "destination.rb" "in_flight_extra.rb" "airport.rb" "paypal_authorisation.rb" "extra_supplier_charge.rb" "balance_process.rb" "order_access.rb" "booking_error_area.rb" "access_previous_password.rb" "cancellation_proof_upload.rb" "basic_fare_rule.rb" "change_request_special_assistance.rb" "override_reason.rb" "atol_charge/" "process_logger.rb" "order_held_payment_collector.rb" "payment_type.rb" "customer_card.rb" "flight_supplier_charge.rb" "airport_resort_taxis_mapping.rb" "passenger.rb" "balance_reminder.rb" "supplier_hotel.rb" "router.rb" "payment_axiar.rb" "supplier_pricing.rb" "flight_passenger.rb" "transfer_operator.rb" "change_request_in_flight_extra.rb" "flight_data_supplier.rb" "hotel_supplier.rb" "hotel_suppliers/" "cancellation_reason.rb" "atol_charge_calculator.rb" "error_message.rb" "image_upload.rb" "legacy_base.rb" "document_generator.rb" "flight_leg.rb" "change_request_cancel_passenger.rb" "refund_type.rb" "deposit_process.rb" "expression.rb" "charge_type.rb" "change_request_change_contact_detail.rb" "fragment_cache_sweeper.rb" "change_request_add_passenger.rb" "hotel.rb" "charge.rb" "fraudulent_value.rb" "stored_card.rb" "extra_booking_carpark_commission.rb" "flight_operator_data_supplier.rb" "change_request_change_hotel.rb" "hotel_passenger.rb" "booking_error_type.rb" "autobook_error_group.rb" "null_operator_currency.rb" "scraper_ip.rb" "hotel_booking.rb" "klarna_payment.rb" "holiday.rb" "autobook_element_log.rb" "variable.rb" "flight_operator_identifier.rb" "change_request_hotel_special_request.rb" "resort_taxis_resort_override.rb" "page_text.rb" "flight_booking.rb" "transfer_destination_mapping.rb" "order.rb" "change_request_refund_request.rb" "refund.rb" "flight_booking_status.rb" "flight_booking/" "flight_operator.rb" "extra_operator_product.rb" "email_notification.rb" "insurance_charge.rb" "hotel_charge.rb" "issue.rb" "transfer_airport_mapping.rb" "legacy_orderline.rb" "email_template.rb" "search_history.rb" "order_rules.rb" "operator_currency.rb" "booking_error.rb" "change_request_change_date.rb" "contact_details.rb" "hold_that_price.rb" "confirmation_email.rb" "access_role_tab.rb" "autobook_error_category.rb" "payment.rb" "extra_operator.rb" "null_flight_leg.rb" "access_role.rb" "allocation_detail.rb" "date_format.rb" "document_template_category.rb" "operator_date_format.rb" "hotel_supplier_charge.rb" "payment/" "document.rb" "extra_booking_finder.rb" "flight_charge.rb" "discount.rb" "create_insurance_booking/" "discount_type.rb" "create_insurance_booking.rb" "chargeback_reason.rb" "change_request_supplier_failure_cover.rb" "insurance_supplier_charge.rb" "company_card_transaction.rb" "authentication_override.rb" "extra_booking_carpark.rb" "transfer_charge.rb" "email_click_through.rb" "transfer_passenger.rb" "location.rb" "transfer_destination_town_mapping.rb" "payments/" "supplier_change_request.rb" "charges_and_payments_sweeper.rb" "country_language.rb" "transfer_supplier_charge.rb" "../" "./")
+
+ ("/home/timothymillar/Code/otb/otb_payments_app/" (22063 15943 289800 734000) ".git/" "bin/" "config.ru" "lib/" ".bundle/" "vendor/" "db/" "spec/" "log/" "tmp/" "public/" ".gitignore" "./" ".ruby-version" "script/" "Rakefile" "config/" "Capfile" "Gemfile.lock" "README.rdoc" ".env" "setup.sh" "doc/" "../" "app/" ".rspec" "setup/" "Procfile" "Gemfile")
+
+ ("/home/timothymillar/Code/otb/otb_payments_app/config/" (22063 15817 545614 545000) "boot.rb" "merchants.yml.example" "locales/" "unicorn.rb" "newrelic.yml" "routes.rb" "environment.rb" "./" "database.yml" "newrelic.yml.example" "deploy.rb" "application.rb" "merchants.yml" "deploy/" "../" "application.yml" "environments/" "application.yml.example" "initializers/")
+
+ ("/home/timothymillar/Code/otb/otb_www_app/app/views/checkout/form_parts/sections/payment_options/" (22056 41195 769991 883000) "_cta_section_with_paypal.html.erb" "_abta_details.html.erb" "_single_payment_type_instructions.sv.html.erb" "_important_information.html.erb" "./" "_single_payment_type_instructions.nb.html.erb" "_cta_section.html.erb" "../" "_single_payment_type_instructions.en.html.erb" "cta_section/" "_payment_type_instructions.html.erb")
+
+ ("/home/timothymillar/Code/otb/otb_www_app/app/views/checkout/form_parts/sections/" (22056 41195 769991 883000) "passenger_details/" "_transfer_details.html.erb" "_carpark_details.html.erb" "payment_details/" "_contact_details.html.erb" "./" "contact_details/" "payment_options/" "_passenger_details.html.erb" "../")
+
+ ("/home/timothymillar/Code/otb/otb_www_app/app/views/checkout/form_parts/" (22056 41195 769991 883000) "sections/" "./" "../" "fields/")
+
+ ("/home/timothymillar/Code/otb/otb_www_app/app/validators/" (22056 41195 765991 881000) "order/" "./" "visitor/" "search/" "../" "contact_detail/")
+
+ ("/home/timothymillar/Code/otb/otb_www_app/app/views/" (22056 41195 781991 888000) "three_d_secure/" "flight_searches/" "ppc/" "ajax/" "light_box/" "hotel_searches/" "shared/" "popups/" "basket/" "hotel_result/" "checkout/" "search_form_experimental/" "application/" "previous_searches/" "static_pages/" "searches/" "content/" "./" "dynamic_deals/" "otb_cms/" "deals/" "site_search/" "group_bookings/" "living_style_guide/" "destinations/" "booking_path/" "tds_redirects/" "components/" "report_mailer/" "../" "deal_recommendations/" "deal_searches/" "personalisation/" "layouts/" "hotels/" "virtual_travel_agent/")
+
+ ("/home/timothymillar/Code/otb/otb_www_app/app/" (22056 41195 765991 881000) "form_builders/" "features/" "decorators/" "presenters/" "adaptors/" "controllers/" "./" "helpers/" "serializers/" "views/" "assets/" "models/" "forms/" "../" "validators/" "mailers/")
+
+ ("/home/timothymillar/Code/otb/otb_www_app/app/models/" (22056 41195 765991 881000) "destination_tabs/" "three_d_secure/" "hotel_href.rb" "currency.rb" "invoice_payment.rb" "api/" "preferences.rb" "web_service/" "night_options.rb" "passenger_age_calculator.rb" "card_payment.rb" "virtual_travel_agent.rb" "insurance_search_request_criteria.rb" "address.rb" "destination_deals/" "insurance_search.rb" "payment_options.rb" "airport_departure_point.rb" "hotel_board.rb" "car_detail.rb" "dynamic_deals.rb" "hotel_search_adapter.rb" "basket/" "fees_calculator.rb" "resource_redirect.rb" "klarna_payment_options.rb" "dynamic_price_point.rb" "pod.rb" "destination_hotels.rb" "deal_pods.rb" "transfer_detail.rb" "search_context/" "contact_detail.rb" "searches_hotel.rb" "themes/" "ecommerce_tracking/" "invoice.rb" "duration_tracking.rb" "hotel_deals.rb" "destination.rb" "payment_type_factory.rb" "search_adapter.rb" "trip_advisor_review.rb" "airport.rb" "card_type_query.rb" "card_type.rb" "card_factory.rb" "search.rb" "google/" "transfer_request.rb" "redirected_search.rb" "sharable_url/" "group_booking_form/" "domains/" "flight_type.rb" "location_type.rb" "transfer_occasion.rb" "./" "regex_matcher.rb" "transfer_search.rb" "passenger.rb" "airport_group_expander.rb" "sharable_url.rb" "search_mode.rb" "language.rb" "board_prioritiser.rb" "visitor_domain.rb" "paypal/" "user_identification.rb" "customer.rb" "hotel_supplier.rb" "null_transfer.rb" "season.rb" "flight_route.rb" "airport_group_departure_point.rb" "currency_exchange.rb" "address_retrieval.rb" "personalised_order.rb" "duration.rb" "flight_search_adapter.rb" "search_criteria/" "transfer_results_adapter.rb" "null_card.rb" "booking_breadcrumb.rb" "order_request_google_analytics.rb" "themes.rb" "destination_href.rb" "order.rb" "position.rb" "resort_taxi.rb" "deal_search/" "luggage_allowance.rb" "order_builder.rb" "../" "deal_search_adapter.rb" "search_scores.rb" "ancillary.rb" "search_context.rb" "price_adjustment.rb" "airport_group.rb" "hotel_metadata.rb" "price_predictor.rb" "address_query.rb" "destination_deals.rb" "deal_recommendations/" "threshold.rb" "hotel_search/" "deal_result_search.rb" "time_range.rb" "visitor.rb" "points_of_interest.rb" "personalisation/" "transfer_preselector.rb" "destination_tabs.rb" "trip_advisor_hotel.rb" "location.rb" "payments/" "hotels/" "merchant_card.rb" "search_form/" "night_range.rb" "tds_redirect.rb")
+
+ ("/home/timothymillar/my-stuff/ruby/pooder/ch02/" (22058 21546 728010 111000) "gear_teeth.rb" "./" "../" "gear.rb")
+
+ ("/home/timothymillar/.emacs.d/elpa/yasnippet-20151011.1823/snippets/ruby-mode/" (22043 37287 40294 231000) "if" "dow" "eai" "mm" "attribute" "eav" "am" "tim" "collect" "y" "for" "def" "r" "rel" "str" "=b" "tu" "while" "select" "eawi" "#" "cls" "case" "dee" "req" "until" "bm" "when" "rb" "./" "map" "init" "ea" "eac" "deli" "rw" "Comp" "upt" "ife" "cla" "zip" "bench" "forin" "red" "reject" "../" "test class" "app" "formula" "GLOB" "inject" "all" "det" "to_" "w" "any")
+
+ ("/home/timothymillar/.emacs.d/elpa/yasnippet-20151011.1823/snippets/" (22043 37290 152277 29000) "groovy-mode/" "m4-mode/" "cider-repl-mode" "markdown-mode/" "nsis-mode/" "cmake-mode/" "latex-mode/" "f90-mode/" "html-mode/" "malabar-mode/" "elixir-mode/" "cc-mode/" "c-mode/" "css-mode/" "snippets/" "udev-mode/" "yaml-mode/" "clojure-mode/" "lisp-interaction-mode/" "org-mode/" "erc-mode/" "enh-ruby-mode" "js-mode/" "c++-mode/" "csharp-mode/" "conf-unix-mode/" "cperl-mode/" "LICENSE" "prog-mode/" "chef-mode/" ".gitignore" "ned-mode/" "typerex-mode" "./" "nxml-mode/" "ruby-mode/" "makefile-gmake-mode/" "snippet-mode/" "nesc-mode/" "tuareg-mode/" "antlr-mode/" "git-commit-mode/" "rename_add_contr.py" "cpp-omnet-mode/" "README.md" "js2-mode" "ensime-mode" "sql-mode/" "python-mode/" "fundamental-mode/" "go-mode/" "java-mode/" "CONTRIBUTORS.txt" "makefile-automake-mode/" "makefile-bsdmake-mode/" "erlang-mode/" "emacs-lisp-mode/" "haskell-mode/" "../" "sh-mode/" "octave-mode/" "lua-mode/" "makefile-mode/" "lisp-mode/" "text-mode/" "rst-mode/" ".nosearch" "applescript-mode/" "perl-mode/" "scala-mode/")
+
+ ("/home/timothymillar/.emacs.d/elpa/yasnippet-20151011.1823/" (22043 37290 608274 485000) "yasnippet.elc" "snippets/" "yasnippet-autoloads.el" "./" "yasnippet.el" "../" "yasnippet-pkg.el")
+
+ ("/home/timothymillar/.emacs.d/elpa/" (22043 37303 908197 820000) "haskell-mode-20151010.1125/" "archives/" "shm-readme.txt" "inf-ruby-20150926.1454/" "yasnippet-20151011.1823/" "rainbow-mode-0.11.signed" "dired-details+-20150104.1350/" "markdown-mode-20150910.836/" "tree-mode-20150226.1816/" "auto-complete-20150618.1949/" "powerline-20151008.1449/" "dired-details-20130824.458/" "dash-20151010.929/" "smex-20150822.1146/" "./" "dirtree-20140129.32/" "expand-region-20150902.558/" "flx-20140921.739/" "haskell-snippets-20150612.1239/" "gnupg/" "flx-ido-20140821.2033/" "ido-vertical-mode-20151003.1833/" "rainbow-mode-readme.txt" "windata-20080412.755/" "ac-inf-ruby-20131115.350/" "popup-20150626.711/" "rainbow-mode-0.11/" "feature-mode-20141121.1030/" "ido-hacks-20150331.1209/" "../" "ghc-20151011.1255/" "undo-tree-20140509.522/" "rvm-20150402.742/" "ruby-compilation-readme.txt" "pretty-lambdada-20150104.1641/" "smartparens-20151010.402/" "multiple-cursors-20150710.456/")
+
+ ("/home/timothymillar/" (22058 20609 379035 152000) "my-stuff/" "Documents/" ".zshrc" ".zcompdump-otbadmin-XPS-15-9530-5.0.7" ".dmrc" "examples.desktop" ".mysql_history" ".nv/" ".ICEauthority" ".zshrc.pre-oh-my-zsh" ".psql_history" ".zsh_history" ".ssh/" ".local/" ".thunderbird/" ".bash_history" ".mozilla/" ".zprofile" ".bundle/" ".bash_logout" ".bashrc" "Videos/" ".Xauthority" ".gnupg/" ".config/" "Pictures/" "Desktop/" ".viminfo" "Code/" ".gem/" ".sudo_as_admin_successful" ".rvm/" "./" ".bash_profile" "Downloads/" ".oh-my-zsh/" ".cache/" "www.sql" "Public/" ".pki/" ".gnome2_private/" ".gitconfig" "Music/" ".zsh-update" ".pry_history" ".zlogin" ".otb_deploy_gem" ".compiz/" ".gemrc" ".nvidia-settings-rc" ".cpan/" ".atom/" ".irb-history" "../" ".zcompdump" "z.sh" ".dbus/" "deja-dup/" ".z" "ubuntu-dev-setup/" ".gnome/" ".cabal/" ".gconf/" ".ghc/" ".emacs.d/" ".gnome2/" ".xsession-errors" "Templates/" ".xsession-errors.old" "missfont.log" ".mkshrc" ".profile")
+
+ ("/home/timothymillar/my-stuff/org/" (22058 20559 454931 295000) "theme-biglow.setup" "git_blog_post.html" "./" "notes.org" "../" "comments.org")
+
+ ("/home/timothymillar/my-stuff/haskell/rwh/ch06/" (22057 60278 106511 747000) "colouredderived.hs" "read.hs" "DataEither.hs" "AutomaticDerivation.hs" "SimpleClass.hs" "./" "naiveeq.hs" "../" "BrokenClass.hs" "Borked.hs" "test" "JSONClass.hs" "eqclasses.hs")
+
+ ("/home/timothymillar/.emacs.d/" (22057 31974 435855 885000) "ido.last" "smex-items" "tramp" "ac-comphist.dat" "places" "init.el" "./" "auto-save-list/" "../" "elpa/" "emacs-backup/")
+
+ ("/etc/" (22056 64187 202779 632000) "bindresvport.blacklist" "cracklib/" "libnl-3/" "ca-certificates.conf" "calendar/" "perl/" "newt/" "mailcap" "bash_completion.d/" "obex-data-server/" "mke2fs.conf" "modules" "postgresql-common/" "udisks2/" "dkms/" "timezone" "at-spi2/" "update-manager/" "gshadow-" "systemd/" "dhcp/" "brltty/" "subuid-" "python2.7/" "aliases" "sound/" "kernel-img.conf" "shadow" "dictionaries-common/" "python3/" "pm/" "deluser.conf" "grub.d/" "manpath.config" "avahi/" "gtk-3.0/" "zsh/" "xul-ext/" "thermald/" "subgid-" "legal" "selinux/" "fstab" "cron.weekly/" "pnm2ppa.conf" "sane.d/" "rc5.d/" "vdpau_wrapper.cfg" "localtime" "ImageMagick-6/" "hdparm.conf" "hosts.deny" "emacs/" "cron.d/" "aptdaemon/" "speech-dispatcher/" "usb_modeswitch.conf" "netscsid.conf" "rmt" "brlapi.key" "ucf.conf" "sensors3.conf" "hosts.allow" "rpc" "acpi/" "gconf/" "bonobo-activation/" "rc0.d/" "sysctl.d/" "issue" "apparmor/" "polkit-1/" "usb_modeswitch.d/" "signon-ui/" "emacs24/" "login.defs" "sensors.d/" "rc.local" "logrotate.conf" "ppp/" "gnome-app-install/" "hosts" "ltrace.conf" "adduser.conf" "UPower/" "initramfs-tools/" "gai.conf" "pcmcia/" "subuid" "ld.so.conf.d/" "sudoers.d/" "openvpn/" "papersize" "brltty.conf" "Muttrc.d/" "openal/" "group-" "logcheck/" "apt/" "machine-id" "insserv.conf" "os-release" "ufw/" "console-setup/" "X11/" "mysql/" "cron.hourly/" "kernel/" "ca-certificates/" "dconf/" "passwd-" "terminfo/" "memcached.conf" "udev/" "dbus-1/" "inputrc" "binfmt.d/" "ghostscript/" "wodim.conf" "update-motd.d/" "init/" "update-notifier/" "insserv/" "rc6.d/" "logrotate.d/" "rsyslog.d/" "ssl/" "security/" "signond.conf" "wgetrc" "fonts/" "OpenCL/" "bluetooth/" "dnsmasq.d/" "group" "opt/" "hp/" "networks" "apg.conf" "modprobe.d/" ".pwd.lock" "odbc.ini" "gss/" "securetty" "bash.bashrc" "cron.daily/" "profile.d/" "nanorc" "host.conf" "ifplugd/" "printcap" "ssh/" "subgid" "redis/" "cupshelpers/" "ld.so.conf" "passwd" "timidity/" "drirc" "nsswitch.conf" "fuse.conf" "pam.conf" "prime-discrete" "modules-load.d/" "lsb-release" "tmpfiles.d/" "crontab" "environment" "rsyslog.conf" "hostname" "insserv.conf.d/" "cron.monthly/" "python3.4/" "kbd/" "gshadow" "lightdm/" "compizconfig/" "gdb/" "depmod.d/" "libaudit.conf" "samba/" "alternatives/" "NetworkManager/" "gtk-2.0/" "whoopsie" "gnome-vfs-2.0/" "gnome/" "sgml/" "kerneloops.conf" "network/" "apparmor.d/" "zsh_command_not_found" "ldap/" "Muttrc" "nginx/" "lvm/" "issue.net" "firefox/" "rc3.d/" "mtools.conf" "sudoers" "profile" "upstart-xsessions" "rc4.d/" "groff/" "chatscripts/" "apport/" "cups/" "popularity-contest.conf" "apm/" "haproxy/" "shadow-" "services" "pam.d/" "postfix/" "postgresql/" "skel/" "mime.types" "shells" "mailcap.order" "clamav/" "sysctl.conf" "xdg/" "default/" "init.d/" "locale.alias" "rc2.d/" "magic.mime" "rcS.d/" "updatedb.conf" "odbcinst.ini" "python/" "doc-base/" "wildmidi/" "iproute2/" "debian_version" "rc1.d/" "ld.so.cache" "resolvconf/" "lintianrc" "anacrontab" "resolv.conf" "dpkg/" "pulse/" "vtrgb" "ODBCDataSources/" "libpaper.d/" "wpa_supplicant/" "bash_completion" "protocols" "magic" "thunderbird/" "debconf.conf" "vim/" "libreoffice/" "pki/" "mtab" "xml/" "../" "./")
+
+ ("/home/timothymillar/my-stuff/haskell/rwh/" (22055 21325 250297 81000) "ch06/" "./" "../")
+
+ ("/home/timothymillar/my-stuff/haskell/" (22055 21309 738109 641000) "rwh/" "decon/" "cis194/" "./" "../")
+
+ ("/home/timothymillar/.config/" (22052 59100 93262 841000) "libaccounts-glib/" "compiz-1/" "upstart/" "evolution/" "software-center/" "gtk-3.0/" "menus/" "terminator/" "google-chrome/" "mimeapps.list" "unity/" "monitors.xml" "totem/" "ibus/" "dconf/" "eog/" "./" "update-notifier/" "tilda/" "Slack/" "gnome-control-center/" "nautilus/" "gnome-session/" "gtk-2.0/" "user-dirs.dirs" "htop/" "../" "autostart/" "user-dirs.locale" "Atom/" "pulse/" "libreoffice/")
+
+ ("/home/timothymillar/my-stuff/otb-academy-oct-2015/.git/" (22054 24359 612763 729000) "packed-refs" "./" "branches/" "COMMIT_EDITMSG" "logs/" "config" "hooks/" "ORIG_HEAD" "objects/" "refs/" "HEAD" "../" "FETCH_HEAD" "info/" "index" "description")
+
+ ("/home/timothymillar/my-stuff/otb-academy-oct-2015/xtreme-startup/spec/" (22054 14790 523515 608000) "startup_spec.rb" "./" "spec_helper.rb" "../")
+
+ ("/home/timothymillar/my-stuff/otb-academy-oct-2015/xtreme-startup/" (22054 18165 634932 87000) "myapp.rb" "spec/" "index.html" "./" "startup.rb" "../" ".rspec" "Gemfile")
+
+ ("/home/timothymillar/.rvm/config/" (22056 45267 857570 246000) "known_strings" "pre_commit.yml" "ssh.example" "solaris/" "alias" "db" "known_aliases" "displayed-notes.txt" "./" "sha512" "remote" "known" "../" "md5")
+
+ ("/home/timothymillar/Code/otb/otb_www_app/vendor/bundle/ruby/2.1.0/gems/curb-0.8.1/ext/" (22056 60333 826178 532000) "curb.o" "curb_multi.h" "Makefile" "curb_core.so" "curb.c" "curb_postfield.c" "curb_multi.c" "curb_upload.h" "curb_easy.c" "curb_upload.c" "curb_upload.o" "extconf.rb" "curb_postfield.h" "curb_errors.c" "curb_macros.h" "./" "curb_postfield.o" ".RUBYARCHDIR.time" "curb.h" "curb_easy.o" "curb_multi.o" "curb_config.h" "curb_errors.o" "../" "curb_errors.h" "curb_easy.h")
+
+ ("/usr/sbin/" (22055 18585 335302 312000) "netscsid" "tunelp" "zic" "gencmn" "accept" "update-initramfs" "cupsdisable" "gnome-menus-blacklist" "dkms" "cracklib-packer" "update-pciids" "pppoe-discovery" "guest-account" "popularity-contest" "cupsaddsmb" "gensprep" "invoke-rc.d" "cppw" "vigr" "postmap" "pptpsetup" "cupsfilter" "postmulti" "grub-set-default" "grub-reboot" "posttls-finger" "create-cracklib-dict" "grpck" "update-default-aspell" "iconvconfig" "update-grub2" "pwck" "arp" "update-gsfontmap" "lpmove" "postlog" "grub-install" "ispell-autobuildhash" "thermald" "sshd" "mysqld" "pm-hibernate" "getweb" "postsuper" "grub-probe" "usb_modeswitch" "grub-mkconfig" "update-icon-caches" "pm-powersave" "locale-gen" "dpkg-preconfigure" "qshape" "rmt-tar" "cron" "setvesablank" "rtkitctl" "pm-suspend-hybrid" "genccode" "e2freefrag" "postfix-add-filter" "chgpasswd" "aa-status" "rmt" "apparmor_status" "chpasswd" "mkinitramfs" "iucode-tool" "update-icon-caches.gtk2" "usb_modeswitch_dispatcher" "ip6tables-apply" "gconf-schemas" "mklost+found" "qmqp-source" "update-info-dir" "pppdump" "update-mime" "grpconv" "bccmd" "sendmail" "vpddecode" "laptop-detect" "cracklib-unpacker" "update-catalog" "rsyslogd" "postalias" "pppoeconf" "openvpn" "nfnl_osf" "postkick" "hciemu" "dnsmasq" "newusers" "irqbalance" "postcat" "pppconfig" "install-sgmlcatalog" "ldattach" "rmail" "ufw" "remove-shell" "cupsctl" "adduser" "pam-auth-update" "grub-macbless" "groupadd" "update-default-ispell" "update-inetd" "grub-mkdevicemap" "bluetoothd" "iptables-apply" "toshsat1800-irdasetup" "haproxy-systemd-wrapper" "acpid" "popcon-largest-unused" "gennorm2" "hciconfig" "useradd" "avahi-autoipd" "kerneloops" "samba_kcc" "pptp" "addgroup" "make-ssl-cert" "filefrag" "install-docs" "update-dictcommon-hunspell" "safe_finger" "tarcat" "add-shell" "cupsd" "update-alternatives" "paperconfig" "nologin" "usermod" "uuidd" "anacron" "cracklib-format" "alsactl" "biosdecode" "update-rc.d" "groupdel" "accessdb" "cupsenable" "logrotate" "cups-genppdupdate" "unity-greeter" "dpkg-divert" "vbetool" "grpunconv" "pppstats" "update-passwd" "remove-default-ispell" "delgroup" "rtcwake" "cpgr" "update-software-center" "postqueue" "tzconfig" "pam_timestamp_check" "tcpdchk" "vcstime" "ippusbxd" "ntpdate" "lightdm" "select-default-wordlist" "select-default-ispell" "chroot" "remove-default-wordlist" "smtp-sink" "NetworkManager" "update-apt-xapian-index" "cupsreject" "update-fonts-scale" "aptd" "ModemManager" "ownership" "validlocale" "smtp-source" "hpssd" "update-locale" "readprofile" "dpkg-statoverride" "aa-exec" "qmqp-sink" "e4defrag" "nginx" "update-fonts-alias" "fdformat" "reject" "pam_getenv" "saned" "pm-suspend" "update-dictcommon-aspell" "groupmod" "lightdm-session" "userdel" "ntpdate-debian" "update-cracklib" "visudo" "aspell-autobuildhash" "arpd" "dmidecode" "update-default-wordlist" "iucode_tool" "haproxy" "postfix" "pppd" "service" "usbmuxd" "update-fonts-dir" "postlock" "tcpdump" "try-from" "rfkill" "lpc" "deluser" "tcpdmatch" "postconf" "hciattach" "update-grub" "vipw" "update-xmlcatalog" "postfix-add-policy" "update-usbids" "cracklib-check" "dpkg-reconfigure" "pwunconv" "lpinfo" "postdrop" "cupsaccept" "tcpd" "pg_updatedicts" "icupkg" "chat" "pwconv" "lpadmin" "cups-browsed" "avahi-daemon" "update-ca-certificates" "../" "./")
+
+ ("/usr/" (22008 1911 294720 311000) "bin/" "share/" "games/" "src/" "local/" "lib/" "sbin/" "./" "lib32/" "../" "include/")
+
+ ("/home/timothymillar/Code/otb/otb_www_app/vendor/bundle/ruby/2.1.0/gems/" (22056 57448 984917 215000) "cliver-0.3.2/" "acts_as_tree_rails3-0.1.0/" "bunny-1.4.1/" "em-socksify-0.3.0/" "httpclient-2.6.0.1/" "rack-1.4.7/" "armoire-1.4.1/" "crack-0.4.2/" "xpath-2.0.0/" "capybara-2.4.4/" "dalli-2.1.0/" "amq-protocol-1.9.2/" "cucumber-rails-1.4.2/" "sass-rails-3.2.6/" "pusher-0.14.5/" "nokogiri-1.5.5/" "railties-3.2.22/" "builder-3.0.4/" "eventmachine-1.0.8/" "diff-lcs-1.2.5/" "rdoc-3.12.2/" "multi_test-0.1.2/" "thor-0.19.1/" "capistrano-slackify-2.5.0/" "mime-types-1.25.1/" "capistrano-rails-1.1.3/" "activerecord-3.2.22/" "money-3.0.4/" "polyglot-0.3.5/" "rails-3.2.22/" "treetop-1.4.15/" "capistrano-3.4.0/" "net-ssh-2.9.2/" "einhorn-0.6.2/" "bcrypt-3.1.10/" "cucumber-1.3.19/" "rack-cache-1.2/" "i18n-0.7.0/" "erubis-2.7.0/" "mail-2.5.4/" "arel-3.0.3/" "climate_control-0.0.3/" "sprockets-2.2.3/" "yajl-ruby-1.2.1/" "newrelic_rpm-3.13.2.302/" "hike-1.2.3/" "activeresource-3.2.22/" "./" "bcrypt-ruby-3.1.5/" "auth-2.1.3/" "rack-ssl-1.3.4/" "journey-1.0.4/" "em-synchrony-1.0.4/" "rack-test-0.6.3/" "monetize-0.1.4/" "tilt-1.4.1/" "actionpack-3.2.22/" "cookiejar-0.3.2/" "net-scp-1.2.1/" "gherkin-2.12.2/" "cocaine-0.5.7/" "json-1.8.3/" "catcher-1.6.0/" "mysql2-0.3.16/" "http_parser.rb-0.6.0/" "signature-0.1.8/" "colorize-0.7.7/" "flight_operators-2.4.0/" "gyoku-0.4.6/" "multi_json-1.11.2/" "addressable-2.3.8/" "sshkit-1.7.1/" "active_utils-2.2.3/" "activesupport-3.2.22/" "capistrano-pusher-1.0.0/" "em-http-request-1.1.2/" "../" "safe_yaml-1.0.3/" "actionmailer-3.2.22/" "aggregator-1.14.0/" "curb-0.8.1/" "jquery-rails-2.1.3/" "tzinfo-0.3.45/" "log4r-1.1.10/" "capistrano-bundler-1.1.3/" "rake-10.4.2/" "activemodel-3.2.22/" "capistrano-rpm-1.0.0/" "chronic-0.10.2/" "akami-1.2.2/" "structural-0.0.3/" "sass-3.4.14/")
+
+ ("/home/timothymillar/Code/otb/otb_www_app/vendor/bundle/ruby/2.1.0/gems/curb-0.8.1/" (22056 57448 992917 209000) "lib/" "LICENSE" "ext/" "./" "tests/" "Rakefile" "README" "../" "doc.rb")
+
+ ("/home/timothymillar/Code/otb/otb_www_app/vendor/bundle/ruby/2.1.0/" (22056 55706 20462 832000) "bin/" "cache/" "extensions/" "specifications/" "./" "gems/" "bundler/" "build_info/" "doc/" "../")
+
+ ("/home/timothymillar/Code/otb/otb_www_app/vendor/bundle/ruby/" (22056 55642 120452 164000) "./" "2.1.0/" "../")
+
+ ("/home/timothymillar/Code/otb/otb_www_app/vendor/bundle/" (22056 55642 120452 164000) "ruby/" "./" "../")
+
+ ("/home/timothymillar/Code/otb/otb_www_app/vendor/" (22056 55642 120452 164000) ".gitkeep" "./" "assets/" "bundle/" "../")
+
+ ("/home/timothymillar/Code/otb/otb_www_app/bin/" (22056 41276 481999 136000) "sprockets" "newrelic_cmd" "capify" "httpclient" "thor" "ldiff" "cucumber" "einhorn" "mongrel_rpm" "cap" "ri" "htmldiff" "nrdebug" "scss" "sass" "./" "safe_yaml" "einhornsh" "rdoc" "newrelic" "nokogiri" "tt" "rackup" "rake" "erubis" "../" "rails" "tilt" "sass-convert")
+
+ ("/home/timothymillar/.rvm/scripts/" (22008 7183 205598 618000) "irbrc" "wrapper" "rvm" "hook" "migrate" "aliases" "zsh/" "snapshot" "hash" "cleanup" "cron" "docs" "autolibs" "maglev" "cli" "pkg" "requirements" "upgrade" "tools" "help" "repair" "extras/" "alias" "monitor" "completion" "./" "cd" "set" "gemsets" "initialize" "group" "irbrc.rb" "list" "prepare" "base" "fix-permissions" "fetch" "patches" "functions/" "rtfm" "../" "manage" "version" "osx-ssl-certs" "install" "env" "rubygems" "info" "disk-usage" "override_gem" "mount" "notes")
+
+ ("/home/timothymillar/.rvm/" (22008 7183 469590 685000) "archives/" "bin/" "RELEASE" "src/" "scripts/" "docs/" "lib/" "user/" "help/" "wrappers/" "LICENSE" "installed.at" "log/" "tmp/" "contrib/" "gem-cache/" "./" "VERSION" "examples/" "gemsets/" "gems/" "config/" "man/" "hooks/" "README" "patches/" "../" "environments/" "patchsets/" "rubies/")
+
+ ("/home/timothymillar/Downloads/" (22053 32988 775535 177000) "RA489_151012_BasicSoulUnit-residentadvisor.net.mp3" "pandoc-1.15.1-1-amd64.deb" "tmp.py" "tmp/" "chapter_1.pdf" "essence.ps" "./" "essence.dvi" "atom-amd64.deb" "org.org" "tmp.rb" "chapter_1 (1).pdf" "fp-oo-sample.pdf" "chapter_1 (2).pdf" "../" "piano1.mp3.mp3" "dbsletter.pdf")
+
+ ("/home/timothymillar/my-stuff/otb-academy-oct-2015/shouty/features/" (22053 64529 658506 144000) "./" "step_definitions/" "../" "hear_shout.feature")
+
+ ("/home/timothymillar/my-stuff/otb-academy-oct-2015/shouty/features/step_definitions/" (22053 64529 658506 144000) "shout_steps.rb" "./" "../")
+
+ ("/home/timothymillar/my-stuff/otb-academy-oct-2015/shouty/lib/" (22053 64529 658506 144000) "./" "shouty.rb" "../")
+
+ ("/home/timothymillar/my-stuff/pool-tournament/pool_tournament/lib/tasks/" (22052 45294 330839 641000) "./" "cucumber.rake" "scheduler.rake" "../" ".keep")
+
+ ("/home/timothymillar/my-stuff/pool-tournament/pool_tournament/app/helpers/" (22052 45294 330839 641000) "index_helper.rb" "auth_helper.rb" "./" "tournament_helper.rb" "../" "matches_helper.rb" "application_helper.rb")
+
+ ("/home/timothymillar/my-stuff/pool-tournament/pool_tournament/config/" (22052 45294 330839 641000) "secrets.yml" "boot.rb" "cucumber.yml" "locales/" "routes.rb" "environment.rb" "./" "database.yml" "application.rb" "puma.rb" "../" "environments/" "initializers/")
+
+ ("/home/timothymillar/my-stuff/pool-tournament/pool_tournament/spec/controllers/" (22052 45294 330839 641000) "users_controller_spec.rb" "index_controller_spec.rb" "passwords_controller_spec.rb" "./" "auth_controller_spec.rb" "tournaments_controller_spec.rb" "../" "matches_controller_spec.rb")
+
+ ("/home/timothymillar/my-stuff/pool-tournament/pool_tournament/app/controllers/" (22052 45294 330839 641000) "./" "passwords_controller.rb" "auth_controller.rb" "matches_controller.rb" "tournaments_controller.rb" "../" "concerns/" "index_controller.rb" "application_controller.rb" "users_controller.rb")
+
+ ("/home/timothymillar/my-stuff/pool-tournament/pool_tournament/app/models/" (22052 45294 330839 641000) "match.rb" "user.rb" "tournament.rb" "./" "../" "concerns/" ".keep")
+
+ ("/home/timothymillar/my-stuff/pool-tournament/pool_tournament/app/views/matches/" (22052 45294 330839 641000) "edit.html.erb" "new.html.erb" "_form.html.erb" "./" "index.json.jbuilder" "show.html.erb" "../" "index.html.erb" "show.json.jbuilder")
+
+ ("/home/timothymillar/my-stuff/pool-tournament/pool_tournament/lib/" (22052 45294 330839 641000) "tasks/" "./" "rounds.rb" "assets/" "../")
+
+ ("/home/timothymillar/my-stuff/pool-tournament/pool_tournament/spec/models/" (22052 45294 330839 641000) "tournament_spec.rb" "match_spec.rb" "./" "user_spec.rb" "../")
+
+ ("/home/timothymillar/my-stuff/pool-tournament/pool_tournament/db/migrate/" (22052 45294 330839 641000) "20151015095539_add_clearance_to_users.rb" "20151016101720_add_position_id_to_matches.rb" "20151017143142_create_matches.rb" "20151007134055_create_users.rb" "20151008144853_create_tournaments.rb" "20151016080046_add_slack_username_to_users.rb" "20151016100811_add_bracket_to_matches.rb" "20151015144423_change_data_type_for_matches_score.rb" "./" "20151009100013_create_tournament_users.rb" "20151014100610_create_tournaments_matches.rb" "20151014103823_create_matches.rb" "20151015134823_add_status_to_matches.rb" "20151014223515_add_name_to_tournaments.rb" "20151012121802_add_auth_token_to_user.rb" "../" "20151018224859_add_format_to_tournaments.rb" "20151012150044_remove_number_of_players_from_tournaments.rb")
+
+ ("/home/timothymillar/my-stuff/pool-tournament/pool_tournament/" (22052 45294 326839 500000) "features/" "bin/" "config.ru" "TAGS" "lib/" ".bundle/" "vendor/" "db/" "spec/" "log/" "tmp/" "public/" ".gitignore" "./" "script/" "Rakefile" "config/" "Gemfile.lock" "README.rdoc" "../" "app/" ".rspec" "app.json" "Procfile" "Gemfile")
+
+ ("/home/timothymillar/my-stuff/haskell/cis194/w05/" (22053 28776 500686 110000) "CalcTests.hs" "#05-type-classes.lhs#" "ExprT.hs" "Testing.hs" "Parser.hs" "05-type-classes.pdf" "05-type-classes.lhs" "./" "Calc.hs" "StackVM.hs" "../")
+
+ ("/home/timothymillar/my-stuff/haskell/cis194/w06/" (22053 62300 698627 993000) "Testing.hs" "./" "../" "06-laziness.pdf" "06-laziness.lhs")
+
+ ("/home/timothymillar/my-stuff/otb-academy-oct-2015/game-of-life/" (22052 58583 960412 285000) "spec/" "./" "../" ".rspec" "Gemfile")
+
+ ("/home/timothymillar/my-stuff/pool-tournament/pool_tournament/app/views/index/" (22052 40321 244268 313000) "./" "../" "index.html.erb")
+
+ ("/home/timothymillar/my-stuff/pool-tournament/pool_tournament/db/" (22052 40941 203398 707000) "migrate/" "schema.rb" "./" "../" "seeds.rb")
+
+ ("/home/timothymillar/my-stuff/pool-tournament/pool_tournament/spec/" (22052 40321 244268 313000) "features/" "routing/" "rails_helper.rb" "controllers/" "./" "helpers/" "views/" "spec_helper.rb" "models/" "factories/" "support/" "../" "requests/")
+
+ ("/home/timothymillar/my-stuff/pool-tournament/pool_tournament/log/" (22048 50343 223302 707000) "./" "test.log" "../" ".keep")
+
+ ("/home/timothymillar/my-stuff/pool-tournament/pool_tournament/app/views/" (22052 40321 244268 313000) "tournaments/" "sessions/" "./" "users/" "matches/" "../" "index/" "layouts/")
+
+ ("/home/timothymillar/my-stuff/pool-tournament/tournament_tree/spec/" (22050 11991 532768 847000) "tournament_double_spec.rb" "tournament_spec.rb" "./" "spec_helper.rb" "../")
+
+ ("/home/timothymillar/my-stuff/pool-tournament/tournament_tree/lib/" (22050 11991 532768 847000) "tournament_double.rb" "tournament.rb" "./" "tournament_remix.rb" "tournament_remix_losers.rb" "../")
+
+ ("/home/timothymillar/my-stuff/pool-tournament/" (22049 927 258573 587000) ".git/" "questions.md" "64teamdouble.pdf" "stories.md" ".gitignore" "./" "heroku_deploy" "pool_tournament/" "README.md" "../" "tournament_tree/")
+
+ ("/home/timothymillar/my-stuff/pool-tournament/tournament_tree/" (22049 927 258573 587000) "lib/" "spec/" "./" "Gemfile.lock" "../" ".rspec" "Gemfile")
+
+ ("/home/timothymillar/my-stuff/pool-tournament/pool_tournament/app/views/layouts/" (22048 49601 735509 795000) "./" "application.html.erb" "../")
+
+ ("/home/timothymillar/my-stuff/pool-tournament/pool_tournament/app/assets/" (22037 2600 512872 720000) "javascripts/" "images/" "./" "stylesheets/" "../")
+
+ ("/home/timothymillar/my-stuff/pool-tournament/pool_tournament/app/" (22037 2600 512872 720000) "controllers/" "./" "helpers/" "views/" "assets/" "models/" "../" "mailers/")
+
+ ("/home/timothymillar/my-stuff/ruby/scratch/tournament/lib/" (22039 63265 39567 809000) "game_scratch.rb" "./" "../" "another_scratch.rb")
+
+ ("/home/timothymillar/my-stuff/ruby/scratch/tournament/" (22039 35595 646607 227000) "lib/" ".bundle/" "spec/" "./" "tournament-scratch.rb" "Gemfile.lock" "../" ".rspec" "Gemfile")
+
+ ("/home/timothymillar/my-stuff/ruby/scratch/tournament/spec/" (22038 28572 924560 82000) "tournament_spec.rb" "./" "spec_helper.rb" "../")
+
+ ("/home/timothymillar/my-stuff/ruby/scratch/" (22038 13201 681939 850000) "./" "func1.rb" "tournament/" "../")
+
+ ("/home/timothymillar/my-stuff/otb-academy-oct-2015/bottles/spec/" (22035 35945 978112 587000) "bottles_spec.rb" "./" "../")
+
+ ("/home/timothymillar/my-stuff/otb-academy-oct-2015/bottles/lib/" (22035 35945 978112 587000) "bottles.rb" "./" "../")
+
+ ("/home/timothymillar/my-stuff/" (22037 2600 264872 614000) "pool-tournament/" "org/" "ruby/" "./" "otb-academy-oct-2015/" "git_tutorial/" "haskell/" "../")
+
+ ("/home/timothymillar/my-stuff/otb-academy-oct-2015/shouty/" (22035 37084 479977 569000) "features/" "lib/" ".bundle/" "LICENSE" "spec/" ".gitignore" "./" "README.md" "Gemfile.lock" "../" "Gemfile")
+
+ ("/home/timothymillar/my-stuff/otb-academy-oct-2015/" (22035 35966 823694 778000) "the-language/" ".git/" "harry_potter/" "./" "string_calculator/" "tyre-pressure/" "README.md" "../" "bottles/" "bowling/" "shouty/")
+
+ ("/home/timothymillar/Downloads/tmp/test8/.git/" (22031 31693 562684 193000) "./" "branches/" "COMMIT_EDITMSG" "logs/" "config" "hooks/" "objects/" "refs/" "HEAD" "../" "info/" "index" "description")
+
+ ("/home/timothymillar/Downloads/tmp/test8/" (22031 31423 407175 522000) ".git/" "bar.txt" "fiddle/" "foo.txt" "./" "quux.txt" "../")
+
+ ("/home/timothymillar/my-stuff/ruby/" (22029 42589 201066 999000) "codewars/" "euler/" "scratch/" "./" "design-patterns/" "../")
+
+ ("/home/timothymillar/Downloads/tmp/test8/fiddle/" (22029 32457 507330 4000) "baz.txt" "./" "../")
+
+ ("/home/timothymillar/my-stuff/otb-academy-oct-2015/string_calculator/spec/" (22027 44894 377571 761000) "./" "spec_helper.rb" "string_calculator_spec.rb" "../")
+
+ ("/home/timothymillar/my-stuff/otb-academy-oct-2015/string_calculator/" (22027 44894 377571 761000) "spec/" "./" "README.md" "Gemfile.lock" "../" ".rspec" "Gemfile")
+
+ ("/home/timothymillar/my-stuff/otb-academy-oct-2015/the-language/lib/" (22027 44894 377571 761000) "./" "triangle.rb" "trainer.rb" "../")
+
+ ("/home/timothymillar/my-stuff/otb-academy-oct-2015/harry_potter/" (22026 19033 85826 747000) "./" "README.md" "../")
+
+ ("/home/timothymillar/my-stuff/otb-academy-oct-2015/the-language/spec/" (22027 44894 381571 762000) "objects_spec.rb" "proxy_object_project_spec.rb" "example_file.txt" "scoring_project_spec.rb" "hashes_spec.rb" "constants_spec.rb" "symbols_spec.rb" "modules_spec.rb" "inheritance_spec.rb" "regular_expressions_spec.rb" "dice_project_spec.rb" "class_methods_spec.rb" "block_spec.rb" "./" "nil_spec.rb" "exceptions_spec.rb" "control_statements_spec.rb" "spec_helper.rb" "classes_spec.rb" "open_classes_spec.rb" "triangle_spec.rb" "keyword_args_spec.rb" "message_passing_spec.rb" "../" "strings_spec.rb" "methods_spec.rb" "sandwich_code_spec.rb" "triangle_2_spec.rb" "introduction_spec.rb" "scope_spec.rb" "true_false_spec.rb" "to_str_spec.rb" "iteration_spec.rb" "arrays_spec.rb")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t
