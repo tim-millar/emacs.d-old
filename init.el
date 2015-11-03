@@ -79,7 +79,7 @@
 (setq-default indent-tabs-mode nil)
 ;; whitespace mode
 (require 'whitespace)
-(global-set-key "\C-c_w" 'whitespace-mode)
+(global-set-key "\C-c\w" 'whitespace-mode)
 (global-set-key "\C-c_t" 'whitespace-toggle-options)
 
 ;; set-up z-shell for shell-mode
@@ -177,7 +177,7 @@ If the new path's directories does not exist, create them."
  
 ;; rainbow-delimeter
 (require 'rainbow-delimiters)
-(add-hook 'prog-mode-hook 'rainbow-delimiters)
+(add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
 
  ;; pretty-lambda
 (require 'pretty-lambdada)
@@ -200,8 +200,8 @@ If the new path's directories does not exist, create them."
 ;; ctags
 (setq exec-path (append exec-path '("/usr/bin/ctags")))
 (require 'ggtags)
-(add-hook 'projectile-mode (lambda ()
-                             (setq ggtags-mode 1))) ; turn on ggtags in projectile mode
+(add-hook 'projectile-mode (lambda () ; turn on ggtags in projectile mode
+                             (setq ggtags-mode 1)))
 ;; (defun create-tags (dir-name) ; is this not needed?
 ;;     "Create tags file."
 ;;     (interactive "DDirectory: ")
@@ -333,11 +333,15 @@ If the new path's directories does not exist, create them."
 ;;   (rvm-activate-corresponding-ruby))
 
 ;; haskell config
+;; (setenv "PATH" (concat (getenv "PATH") ":" (getenv "HOME") "/.cabal/bin"))
+(setq exec-path (append exec-path '((getenv "HOME") "/.cabal/bin")))
 (add-hook 'haskell-mode-hook 'interactive-haskell-mode)
 (add-hook 'haskell-mode-hook 'turn-on-haskell-indentation)
+(custom-set-variables
+  '(haskell-tags-on-save t))
 ; keybindings
 (eval-after-load 'haskell-mode
-          '(define-key haskell-mode-map [f8] 'haskell-navigate-imports))
+  '(define-key haskell-mode-map [f8] 'haskell-navigate-imports))
 (eval-after-load 'haskell-mode 
   '(progn
      (define-key haskell-mode-map (kbd "C-c C-l") 'haskell-process-load-or-reload)
@@ -347,7 +351,8 @@ If the new path's directories does not exist, create them."
      (define-key haskell-mode-map (kbd "C-c C-c") 'haskell-process-cabal-build)
      (define-key haskell-mode-map (kbd "C-c C-k") 'haskell-interactive-mode-clear)
      (define-key haskell-mode-map (kbd "C-c c") 'haskell-process-cabal)
-     (define-key haskell-mode-map (kbd "SPC") 'haskell-mode-contextual-space)))
+     (define-key haskell-mode-map (kbd "SPC") 'haskell-mode-contextual-space)
+     (define-key haskell-mode-map (kbd "M-.") 'haskell-mode-jump-to-def-or-tag)))
 ; Unicode symbols
 (defvar haskell-font-lock-symbols)
 (setq haskell-font-lock-symbols t)
