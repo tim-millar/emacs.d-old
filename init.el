@@ -6,6 +6,9 @@
                          ("melpa" . "http://melpa.milkbox.net/packages/")))
 (package-initialize)
 
+;; add custom config files to load path
+(add-to-list 'load-path "~/.emacs.d/custom")
+
 ; switch off splash
 (setq inhibit-splash-screen t)
 
@@ -20,6 +23,7 @@
  'org-babel-load-languages
  '(
    (sh . t)
+   (http . t)
    (python . t)
    (R . t)
    (ruby . t)
@@ -150,30 +154,11 @@ If the new path's directories does not exist, create them."
 ;; which-func-mode
 (which-function-mode 1)
 (eval-after-load "which-func"
-      '(add-to-list 'which-func-modes '(java-mode cc-mode python-mode ruby-mode)))
+  '(add-to-list 'which-func-modes '(java-mode cc-mode python-mode ruby-mode)))
 
-;; Ido-mode
-;; enable ido-mode
-(setq ido-enable-flex-matching t)
-(setq ido-everywhere t)
-(ido-mode 1)
-(require 'ido-hacks) ;ido-hacks
-(require 'ido-vertical-mode) ;vertical-mode
-(ido-vertical-mode 1) 
-(require 'flx-ido) ;flx-ido-mode
-(flx-ido-mode 1)
-;; disable ido faces to see flx highlights.
-(setq ido-use-faces nil)
-
-;; Enable smex
-(require 'smex) ; Not needed if you use package.el
-(smex-initialize) ; Can be omitted. This might cause a (minimal) delay
-                  ; when Smex is auto-initialized on its first run.
-;; smex key-bindings
-(global-set-key (kbd "M-x") 'smex)
-(global-set-key (kbd "M-X") 'smex-major-mode-commands)
-;; This is your old M-x.
-(global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
+;; helm setup is in setup-helm.el
+(require 'helm)
+(require 'setup-helm)
  
 ;; rainbow-delimeter
 (require 'rainbow-delimiters)
@@ -188,25 +173,30 @@ If the new path's directories does not exist, create them."
 (require 'yasnippet)
 (yas-global-mode 1)
 
+(require 'diminish)
+(diminish 'yas-minor-mode)
+(diminish 'auto-complete-mode)
+(diminish 'undo-tree-mode)
+(diminish 'smartparens-mode)
+(diminish 'helm-mode)
+
 ;; git
-(global-set-key [?\C-c ?g ?c] 'mo-git-blame-current)
+(global-set-key [?\C-c ?g ?b] 'mo-git-blame-current)
 (global-set-key [?\C-c ?g ?f] 'mo-git-blame-file)
 (global-set-key (kbd "C-x g") 'magit-status)
 
 ;; projectile / project management
 (projectile-global-mode)
 (setq projectile-mode-line '(:eval (format " Proj[%s]" (projectile-project-name))))
+(setq projectile-completion-system 'helm)
+(helm-projectile-on)
 
 ;; ctags
 (setq exec-path (append exec-path '("/usr/bin/ctags")))
-(require 'ggtags)
-(add-hook 'projectile-mode (lambda () ; turn on ggtags in projectile mode
-                             (setq ggtags-mode 1)))
-;; (defun create-tags (dir-name) ; is this not needed?
-;;     "Create tags file."
-;;     (interactive "DDirectory: ")
-;;     (shell-command
-;;      (format "ctags -a -f TAGS -e -R %s" (directory-file-name dir-name))))
+;; (require 'ggtags)
+;; (add-hook 'projectile-mode (lambda () ; turn on ggtags in projectile mode
+;;                              (setq ggtags-mode 1)))
+(require 'setup-helm-gtags)
 
 ;; smartparens-mode
 (package-initialize) ; not picking up smart-parens in the load-path
@@ -296,8 +286,7 @@ If the new path's directories does not exist, create them."
 (defun my-web-mode-hook ()
   "Hooks for Web mode."
   (setq web-mode-markup-indent-offset 2)
-  (setq web-mode-code-indent-offset 2)
-)
+  (setq web-mode-code-indent-offset 2))
 (add-hook 'web-mode-hook  'my-web-mode-hook)
 
 ; ruby-mode hook
@@ -313,13 +302,15 @@ If the new path's directories does not exist, create them."
                                (setq ruby-deep-arglist t)
                                (setq ruby-deep-indent-paren nil)
                                (setq c-tab-always-indent nil)
-                               (setq ggtags-mode 1)
+                               (setq ruby-insert-encoding-magic-comment nil)
+                               ;; (setq ggtags-mode 1)
+                               (rvm-activate-corresponding-ruby)
                                (require 'inf-ruby)
                                (require 'ruby-compilation))))
 
 ; rvm-mode
 (require 'rvm)
-(rvm-use-default) ;; use rvm's default ruby for the current Emacs session
+;; (rvm-use-default) ;; use rvm's default ruby for the current Emacs session
 
 ; yaml-mode
 (require 'yaml-mode)
@@ -333,10 +324,10 @@ If the new path's directories does not exist, create them."
 ;;   (rvm-activate-corresponding-ruby))
 
 ;; haskell config
-;; (setenv "PATH" (concat (getenv "PATH") ":" (getenv "HOME") "/.cabal/bin"))
 (setq exec-path (append exec-path '((getenv "HOME") "/.cabal/bin")))
 (add-hook 'haskell-mode-hook 'interactive-haskell-mode)
-(add-hook 'haskell-mode-hook 'turn-on-haskell-indentation)
+(add-hook 'haskell-mode-hook '(lambda ()
+                                (setq haskell-indentation-mode t)))
 (custom-set-variables
   '(haskell-tags-on-save t))
 ; keybindings
