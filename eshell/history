@@ -1,46 +1,128 @@
-./valid-email
-./valid-email invalid
-./valid-email tim@test.com
-l
+message RAILS_ENV
 ls
-ll
-ls -al
-echo $PATH
-cd ~/Code/otb/otb_www_app/
+bundle exec cap sandbox deploy
+ls
+which top
+ls
+which bundle
+which dstat
+ls
+runhaskell helloworld.has
+runhaskell helloworld.hs
+runhaskell helloworld.hs
+stack templates
+stack new hello-world yesod-minimal
+l
+cd hello-world/
+l
+stack build yesod-bin cabal-install --install-ghc
+stack runghc
+stack runghc helloworld.hs
+stack build yesod-bin cabal-install --install-ghc
+stack build
+stack build
+stack build
+stack build
+cd ..
+stack new hello-world yesod-sqlite && cd my-project
+l
+cd hello-world/
+stack build yesod-bin cabal-install --install-ghc
+cd ..
+l
+stack build yesod persistent-sqlite yesod-static esqueleto
 l
 ls -al
-bundle exec foreman start
-ruby -v
-cat .ruby-version
-bundle install
-top
-sudo apt-get install ack-grep
-ruby kata7_tests.rb
-ruby kata7_tests.rb
-cd ../../
-bundle exec spec spec/models/holiday_spec.rb 
-bundle exec spec spec/models/holiday_spec.rb 
-bundle exec spec spec/models/holiday_spec.rb 
-bundle exec spec spec/models/holiday_spec.rb 
-bundle exec spec spec/models/holiday_spec.rb 
-bundle exec spec spec/models/holiday_spec.rb 
-bundle exec spec spec/models/holiday_spec.rb 
-bundle exec spec spec/models/holiday_spec.rb 
-bundle exec spec spec/models/holiday_spec.rb 
-bundle exec spec spec/models/holiday_spec.rb 
-spec spec && git push -u
-bundle exec spec spec && git push -u
-curl -v https://api.sandbox.paypal.com/v1/oauth2/token \-H "Accept: application/json" \-H "Accept-Language: en_US" \-u "EOJ2S-Z6OoN_le_KS1d75wsZ6y0SFdVsY9183IvxFyZp:EClusMEUk8e9ihI7ZdVLF5cZ6y0SFdVsY9183IvxFyZp" \-d "grant_type=client_credentials"
-curl -v https://api.sandbox.paypal.com/v1/payments/payment \-H 'Content-Type: application/json' \-H 'Authorization: Bearer A101.Bwt3RiYV-y-t8LbgRjuY5vnP1pCxS3Z_Sdy3Pi2w8gbLAPy53YtxuSX7sxaX-RbP.L6ybs0TV2Spng3OnH7kB2QvonTS' \-d '{  "intent":"sale",  "redirect_urls":{    "return_url":"http://example.com/your_redirect_url.html",    "cancel_url":"http://example.com/your_cancel_url.html"  },  "payer":{    "payment_method":"paypal"  },  "transactions":[    {      "amount":{        "total":"7.47",        "currency":"USD"      }    }  ]}'
-curl -v https://api.sandbox.paypal.com/v1/payments/payment \-H 'Content-Type: application/json' \-H 'Authorization: Bearer A101.Bwt3RiYV-y-t8LbgRjuY5vnP1pCxS3Z_Sdy3Pi2w8gbLAPy53YtxuSX7sxaX-RbP.L6ybs0TV2Spng3OnH7kB2QvonTS' \-d '{  "intent":"sale",  "redirect_urls":{    "return_url":"http://<return URL here>",    "cancel_url":"http://<cancel URL here>"  },  "payer":{    "payment_method":"paypal"  },  "transactions":[    {      "amount":{        "total":"7.47",        "currency":"USD"      },      "description":"This is the payment transaction description."    }  ]}'
-curl -v https://api.sandbox.paypal.com/v1/payments/payment \-H 'Content-Type: application/json' \-H 'Authorization: Bearer A101.Bwt3RiYV-y-t8LbgRjuY5vnP1pCxS3Z_Sdy3Pi2w8gbLAPy53YtxuSX7sxaX-RbP.L6ybs0TV2Spng3OnH7kB2QvonTS' \-d '{  "intent":"sale",  "redirect_urls":{    "return_url":"http://example.com/your_redirect_url.html",    "cancel_url":"http://example.com/your_cancel_url.html"  },  "payer":{    "payment_method":"paypal"  },  "transactions":[    {      "amount":{        "total":"7.47",        "currency":"USD"      },      "description":"This is the payment transaction description."    }  ]}'
-curl -v https://api.sandbox.paypal.com/v1/payments/payment/PAY-6RV70583SB702805EKEYSZ6Y/execute/ \-H 'Content-Type: application/json' \-H 'Authorization: Bearer A101.Bwt3RiYV-y-t8LbgRjuY5vnP1pCxS3Z_Sdy3Pi2w8gbLAPy53YtxuSX7sxaX-RbP.L6ybs0TV2Spng3OnH7kB2QvonTS' \-d '{ "payer_id" : "7E7MGXCWTTKK2" }'
-curl -v https://api.sandbox.paypal.com/v1/payments/sale/O-40N07438CY1061829/refund \-H 'Content-Type:application/json'  \-H 'Authorization: Bearer O-40N07438CY1061829' \-d '{}'
-curl -v https://api.sandbox.paypal.com/v1/payments/sale/O-40N07438CY1061829/refund \-H 'Content-Type:application/json'  \-H 'Authorization: Bearer 5WY16457FJ4249334' \-d '{}'
-curl -v https://api.sandbox.paypal.com/v1/payments/sale/O-40N07438CY1061829/refund \-H 'Content-Type:application/json'  \-H 'Authorization: Bearer 5WY16457FJ4249334' \-d '{}'
-curl -v https://api.sandbox.paypal.com/v1/payments/sale/O-40N07438CY1061829/refund \-H 'Content-Type:application/json'  \-H 'Authorization: Bearer EC-99M01779YB2498404' \-d '{}'
-curl -v https://api.sandbox.paypal.com/v1/payments/payment \-H 'Content-Type: application/json' \-H 'Authorization: Bearer EC-99M01779YB2498404' \-d '{  "intent":"sale",  "redirect_urls":{    "return_url":"http://example.com/your_redirect_url.html",    "cancel_url":"http://example.com/your_cancel_url.html"  },  "payer":{    "payment_method":"paypal"  },  "transactions":[    {      "amount":{        "total":"7.47",        "currency":"USD"      }    }  ]}'
-curl -v https://api.sandbox.paypal.com/v1/payments/sale/O-40N07438CY1061829/refund \-H 'Content-Type:application/json'  \-H 'Authorization: Bearer EC-99M01779YB2498404' \-d '{}'
-pwd
-curl -v -X GET https://api.sandbox.paypal.com/v1/payments/sale/O-40N07438CY1061829 \-H "Content-Type:application/json" \-H "Authorization: Bearer EC-99M01779YB2498404"
-curl -v -X GET https://api.sandbox.paypal.com/v1/payments/capture/O-40N07438CY1061829 \-H "Content-Type:application/json" \-H "Authorization: Bearer EC-99M01779YB2498404"
+stack runghc helloworld.hs
+stack runghc helloworld.hs
+stack runghc helloworld.hs
+ls
+cd ...
+l
+cd otb_myotb_
+cd otb_myotb_app/
+l
+gfb
+git checkout upstream
+git pull
+bundle exec rake db:migrate
+bundle exec rake db:test:prepare
+git checkout personalisation
+gst
+git checkout personalisation
+git checkout personalisation
+git merge upstream
+gfb
+git branch -D bug/fix-cucumber-truncation-issue
+gfb
+git branch -D feature/reactions-hotel-table
+gfb
+ls
+which top
+ls
+mix phoenix.new blog_phoenix
+cd blog_phoenix/
+mix phoenix.server
+mix deps.get
+mix local.hex
+mix phoenix.server
+l
+mix clean --all
+mix deps.get
+mix phoenix.server
+mix phoenix.gen html Post posts title:string body:text
+mix phoenix.gen.html Post posts title:string body:text
+mix ecto.create
+mix ecto.migrate
+mix phoenix.routes
+mix ecto.create
+mix ecto.create
+mix ecto.create
+mix ecto.migrate
+mix phoenix.routes
+mix phoenix.routes
+mix ecto.create
+mix ecto.migrate
+mix phoenix.routes
+mix phoenix.server
+ls
+gtags
+ls
+ruby exit_codes.rb
+ls
+ruby exit_codes.rb
+ls
+ls
+ls
+ruby exit_codes.rb
+ruby exit_codes.rb
+ruby exit_codes.rb
+ruby exit_codes.rb
+ruby exit_codes.rb
+ruby exit_codes.rb
+ruby exit_codes.rb
+ruby exit_codes.rb
+ruby exit_codes.rb
+ruby exit_codes.rb
+ls
+stack runghc helloworld.hs
+stack runghc -ddump-splies helloworld.hs
+stack runghc -ddump-splices helloworld.hs
+stack build -ddump-splices helloworld.hs
+stack build links.hs
+stack runghc links.hs
+ls
+which yesod
+stack runghc app.hs
+stack runghc app.hs
+ls
+git clone https://github.com/rakanalh/emacs-dashboard ~/.emacs.d/dashboard
+ls
+bundle gem rhino --bin --test=rspec
+ruby friendly_processes.rb 
+ruby friendly_processes.rb 
+ruby friendly_processes.rb 
+ruby friendly_processes.rb 
+ruby friendly_processes.rb 
+ruby friendly_processes.rb 
+ruby friendly_processes.rb 

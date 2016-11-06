@@ -1,0 +1,15 @@
+;;;; Emacs Bookmark Format Version 1 ;;;;
+;;; This format is meant to be slightly human-readable;
+;;; nevertheless, you probably don't want to edit it.
+;;; -*- End Of Bookmark File Format Version Stamp -*-
+(("org-capture-last-stored"
+ (filename . "~/my-stuff/org/todo.org")
+ (front-context-string . "** CRUD Operatio")
+ (rear-context-string . "Gemfile.lock]]\n\n")
+ (position . 12066))
+("a"
+ (filename . "~/Code/otb/otb_admin_app/app/models/flight_booking.rb")
+ (front-context-string . "price_from_suppl")
+ (rear-context-string . "ice\n\n      self.")
+ (position . 29690))
+)

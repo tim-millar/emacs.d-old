@@ -3,9 +3,23 @@
 
 (setq mc/cmds-to-run-for-all
       '(
+        backward-sexp
+        easy-kill
+        electric-newline-and-maybe-indent
+        eval-print-last-sexp
+        haskell-indentation-common-electric-command
+        haskell-mode-contextual-space
+        helm-M-x
+        helm-show-kill-ring
         kill-region
+        org-delete-char
+        orgtbl-self-insert-command
+        wdired-finish-edit
         ))
 
 (setq mc/cmds-to-run-once
       '(
+        haskell-process-load-or-reload
+        helm-gtags-select
+        yas-expand
         ))

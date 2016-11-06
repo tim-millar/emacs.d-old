@@ -1,3 +1,4 @@
 ;;; -*- coding: utf-8 -*-
-(("/etc/nginx/nginx.conf" . 891)
+(("/etc/apt/sources.list.d/google-chrome.list" . 137)
+ ("/etc/nginx/nginx.conf" . 891)
  ("/home/timothymillar/.emacs.d/ido.last" . 51746))

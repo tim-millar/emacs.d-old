@@ -48,12 +48,17 @@
 (define-key 'help-command (kbd "r") 'helm-info-emacs)
 (define-key 'help-command (kbd "C-l") 'helm-locate-library)
 
+;; use ack-grep instead of grep
+(when (executable-find "ack-grep")
+  (setq helm-grep-default-command "ack-grep -Hn --no-group --no-color %e %p %f"
+        helm-grep-default-recurse-command "ack-grep -H --no-group --no-color %e %p %f"))
+
 ;; use helm to list eshell history
 (add-hook 'eshell-mode-hook
           #'(lambda ()
               (define-key eshell-mode-map (kbd "M-l")  'helm-eshell-history)))
 
-;;; Save current position to mark ring
+;; Save current position to mark ring
 (add-hook 'helm-goto-line-before-hook 'helm-save-current-pos-to-mark-ring)
 
 ;; show minibuffer history with Helm
@@ -64,9 +69,19 @@
 
 (define-key global-map [remap list-buffers] 'helm-buffers-list)
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; PACKAGE: helm-descbinds                      ;;
+;;                                              ;;
+;; GROUP: Convenience -> Helm -> Helm Descbinds ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(require 'helm-descbinds)
+(helm-descbinds-mode)
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; PACKAGE: helm-swoop                ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
 ;; Locate the helm-swoop folder to your path
 (require 'helm-swoop)
 

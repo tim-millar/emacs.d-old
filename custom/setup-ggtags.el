@@ -1,7 +1,21 @@
 (require 'ggtags)
+
 (add-hook 'c-mode-common-hook
           (lambda ()
-            (when (derived-mode-p 'c-mode 'c++-mode 'java-mode 'asm-mode 'ruby-mode)
+            (when (derived-mode-p
+                   'c-mode
+                   'c++-mode
+                   'java-mode
+                   'asm-mode
+                   'ruby-mode
+                   'python-mode
+                   'dired-mode
+                   'eshell-mode
+                   'emacs-lisp-mode
+                   'clojure-mode
+                   'rust-mode
+                   'javascript-mode
+                   )
               (ggtags-mode 1))))
 
 (define-key ggtags-mode-map (kbd "C-c g s") 'ggtags-find-other-symbol)

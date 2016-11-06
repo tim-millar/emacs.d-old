@@ -2,9 +2,25 @@
 ;; Automatically generated file!!! DO NOT EDIT!!!
 
 (setq url-cookie-storage
- 'nil)
+ '(("www.sandbox8.onthebeach.co.uk"
+  [url-cookie "otb_variant" "BA" "Fri, 01 Jan 2018 00:00:00 GMT" "/" "www.sandbox8.onthebeach.co.uk" nil])
+ (".quora.com"
+  [url-cookie "m-depd" "a32e4d3fbe372ee1" "09-Nov-2035 23:59:00.00 GMT" "/" ".quora.com" nil]
+  [url-cookie "Max-Age" "622474487" "09-Nov-2035 23:59:00.00 GMT" "/" ".quora.com" nil]
+  [url-cookie "m-css_v" "08e0dd11ea429f2f18" "09-Nov-2035 23:59:00.00 GMT" "/" ".quora.com" nil]))
+)
 (setq url-cookie-secure-storage
- 'nil)
+ '((".quora.com"
+  [url-cookie "Max-Age" "622473969" "09-Nov-2035 23:59:00.00 GMT" "/" ".quora.com" t]
+  [url-cookie "m-b" "_oLiQW6KgPJ6YsOOm29-8Q\\075\\075" "09-Nov-2035 23:59:00.00 GMT" "/" ".quora.com" t])
+ ("en.wikipedia.org"
+  [url-cookie "WMF-Last-Access" "01-Nov-2016" "Sat, 03 Dec 2016 00:00:00 GMT" "/" "en.wikipedia.org" t]
+  [url-cookie "HttpOnly" nil "Sat, 03 Dec 2016 00:00:00 GMT" "/" "en.wikipedia.org" t])
+ ("www.sandbox8.onthebeach.co.uk"
+  [url-cookie "remember_token" "d1c237eebd591be73fa195a4d31534d4b232cc66c0566ee9752164b6556f1b5527b4578f053557d7" "02-Feb-2018 14:52:43.00 GMT" "/" "www.sandbox8.onthebeach.co.uk" t]
+  [url-cookie "otb_variant" "BA" "10-Feb-2018 12:04:52.00 GMT" "/" "www.sandbox8.onthebeach.co.uk" t]
+  [url-cookie "otb_new_visitor_at" "2016-02-02T14%3A52%3A43%2B00%3A00" "05-Feb-2036 12:04:52.00 GMT" "/" "www.sandbox8.onthebeach.co.uk" t]))
+)
 
 ;; Local Variables:
 ;; version-control: never
