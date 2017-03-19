@@ -41,6 +41,11 @@
 ;; smartparens isn't working in eshell
 (add-hook 'eshell-mode-hook #'smartparens-mode)
 
+;; use port of z
+(add-hook 'eshell-mode-hook
+          (defun my-eshell-mode-hook ()
+            (require 'eshell-z)))
+
 ;; eshell popups
 (defun eshell-here ()
   "Opens up a new shell in the directory associated with the

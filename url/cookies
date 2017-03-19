@@ -4,6 +4,8 @@
 (setq url-cookie-storage
  '(("www.sandbox8.onthebeach.co.uk"
   [url-cookie "otb_variant" "BA" "Fri, 01 Jan 2018 00:00:00 GMT" "/" "www.sandbox8.onthebeach.co.uk" nil])
+ ("local-otb.uk"
+  [url-cookie "otb_new_visitor_at" "2016-11-14T10%3A47%3A02%2B00%3A00" "Sun, 09 Nov 2036 13:09:12 -0000" "/" "local-otb.uk" nil])
  (".quora.com"
   [url-cookie "m-depd" "a32e4d3fbe372ee1" "09-Nov-2035 23:59:00.00 GMT" "/" ".quora.com" nil]
   [url-cookie "Max-Age" "622474487" "09-Nov-2035 23:59:00.00 GMT" "/" ".quora.com" nil]
@@ -13,6 +15,13 @@
  '((".quora.com"
   [url-cookie "Max-Age" "622473969" "09-Nov-2035 23:59:00.00 GMT" "/" ".quora.com" t]
   [url-cookie "m-b" "_oLiQW6KgPJ6YsOOm29-8Q\\075\\075" "09-Nov-2035 23:59:00.00 GMT" "/" ".quora.com" t])
+ (".onthebeach.co.uk"
+  [url-cookie "otb_preference" "Desktop" "Fri, 23 Dec 2016 11:44:15 -0000" "/" ".onthebeach.co.uk" t])
+ ("www.sandbox3.onthebeach.co.uk"
+  [url-cookie "otb_new_visitor_at" "2016-11-23T11%3A44%3A15%2B00%3A00" "Tue, 18 Nov 2036 11:44:15 -0000" "/" "www.sandbox3.onthebeach.co.uk" t]
+  [url-cookie "u_allocation" "17" "Fri, 23 Nov 2018 11:44:15 -0000" "/" "www.sandbox3.onthebeach.co.uk" t]
+  [url-cookie "otb_variant" "AA" "Fri, 23 Nov 2018 11:44:15 -0000" "/" "www.sandbox3.onthebeach.co.uk" t]
+  [url-cookie "remember_token" "1d31f49ec6bfca0764ab3b8e8a5bceecef00c1df66d408265d72e929cbbf2e331c51a3cb6ae13145" "Fri, 23 Nov 2018 11:44:15 -0000" "/" "www.sandbox3.onthebeach.co.uk" t])
  ("en.wikipedia.org"
   [url-cookie "WMF-Last-Access" "01-Nov-2016" "Sat, 03 Dec 2016 00:00:00 GMT" "/" "en.wikipedia.org" t]
   [url-cookie "HttpOnly" nil "Sat, 03 Dec 2016 00:00:00 GMT" "/" "en.wikipedia.org" t])

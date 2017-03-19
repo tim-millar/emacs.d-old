@@ -25,16 +25,16 @@
 (use-package all-the-icons
   :config
   (setq all-the-icons-color-icons t)
-  (setq all-the-icons-for-buffer t))
-
-;; startup screen
-(add-to-list 'load-path (concat user-emacs-directory "/dashboard/"))
-(use-package dashboard-startup
-  :config
-  (dashboard/setup-startup-hook))
+  (setq all-the-icons-for-buffer t)
+  :init
+  (add-hook 'dired-mode-hook 'all-the-icons-dired-mode))
 
 ;; pull in emojis
-(add-hook 'after-init-hook #'global-emojify-mode)
+(use-package emojify
+  :init
+  (add-hook 'org-mode-hook 'emojify-mode)
+  (add-hook 'erc-mode-hook 'emojify-mode)
+  (add-hook 'elfeed-show-mode-hook 'emojify-mode))
 
 ;; Configure org-mode
 ;; ====================
@@ -44,6 +44,7 @@
 (define-key global-map "\C-cl" 'org-store-link)
 (define-key global-map "\C-ca" 'org-agenda)
 (setq org-log-done t)
+(require 'ox-md)                        ; support markdown export
 
 (setq org-agenda-files (list "~/my-stuff/org/todo.org"
                              "~/my-stuff/org/logs.org" 
@@ -117,6 +118,7 @@
 (global-set-key "\C-x\C-g" 'goto-line)
 (global-set-key [f1] 'compile)
 (global-set-key [f2] 'next-error)
+(global-set-key (kbd "C-x K") 'kill-this-buffer)
 
 ; switch off tool bar
 (tool-bar-mode -1)
@@ -137,6 +139,8 @@
 ;; windmove
 (windmove-default-keybindings)
 (setq windmove-wrap-around t)
+;; sentences end with a single space
+(setq sentence-end-double-space nil)
 ;; resize windows
 (global-set-key (kbd "C-S-<left>") 'shrink-window-horizontally)
 (global-set-key (kbd "C-S-<right>") 'enlarge-window-horizontally)
@@ -168,6 +172,8 @@
 (set-register ?e (cons 'file "~/.emacs.d/init.el"))
 (set-register ?z (cons 'file "~/.zshrc"))
 (set-register ?n (cons 'file "~/my-stuff/org/notes.org"))
+(set-register ?c (cons 'file "~/my-stuff/org/comments.org"))
+
 
 ;; no tabs!
 (setq-default indent-tabs-mode nil)
@@ -203,6 +209,21 @@
       save-interprogram-paste-before-kill t
       apropos-do-all t
       mouse-yank-at-point t)
+
+;; (defun tm/ibuffer-show-filename ()
+;;   (interactive)
+;;   (let ((buf (ibuffer-current-buffer))
+;;         (lsoutput nil))
+;;     (when (file-exists-p (buffer-file-name buf))
+;;       (with-temp-buffer
+;;         (let* ((filename (buffer-file-name buf))
+;;                (default-directory (file-name-directory filename))
+;;                (just-filename (file-name-nondirectory filename)))
+;;           (call-process "/bin/ls" nil t nil "-l" just-filename)
+;;           (setq lsoutput (buffer-substring-no-properties (point-min) (- (point-max) 1))))))
+;;     (message lsoutput)))
+ 
+;; (define-key ibuffer-mode-map (kbd "a") 'tm/ibuffer-show-filename) ; ibuffer-mode-map is void
 
 ;; Stefan Monnier <foo at acm.org>. It is the opposite of fill-paragraph    
 (defun unfill-paragraph (&optional region)
@@ -257,6 +278,7 @@ If the new path's directories does not exist, create them."
 ;; ====================
 (use-package async
   :ensure t
+  :defer t
   :config (dired-async-mode 1))
 
 ;; allow dired to be able to delete or copy a whole dir.
@@ -285,11 +307,14 @@ If the new path's directories does not exist, create them."
   '(add-to-list 'which-func-modes '(java-mode cc-mode python-mode ruby-mode)))
 
 ;; helm setup is in setup-helm.el
-(use-package helm :ensure t)
+(use-package helm
+  :ensure t)
 (require 'setup-helm)
 (helm-flx-mode 1)
 (helm-fuzzier-mode 1)
-(use-package helm-themes :ensure t)
+(use-package helm-themes
+  :ensure t
+  :defer t)
 ;; helm-dash
 (setq helm-dash-browser-func 'eww)
 ;; helm-git-grep
@@ -299,16 +324,25 @@ If the new path's directories does not exist, create them."
 ;; Invoke `helm-git-grep' from other helm.
 (eval-after-load 'helm
   '(define-key helm-map (kbd "C-c g g") 'helm-git-grep-from-helm))
+;; hide boring buffers
+;; (setq helm-boring-buffer-regexp-list (list (rx "*magit-") (rx "*helm")))
+(add-to-list 'helm-boring-buffer-regexp-list "\\`\\*magit")
 ;; (defun tm/dash-hook ()
 ;;   (local-set-key "C-h D d" 'helm-dash)
 ;;   (local-set-key "C-h D p" 'helm-dash-at-point))
-;; (use-package helm-dash
-;;   :ensure t
-;;   :init
-;;   (setq helm-dash-docsets-path (format "%s/.docsets" (getenv "HOME")))
-;;   (setq helm-dash-common-docsets '("Ruby on Rails" "Ruby" "Haskell"))
-;;   (add-hook 'ruby-mode-hook 'tm/dash-hook)
-;;   (add-hook 'haskell-mode-hook 'tm/dash-hook))
+(use-package helm-dash
+  :ensure t
+  :defer t
+  :init
+  (setq helm-dash-docsets-path (format "%s/.docsets" (getenv "HOME")))
+  (setq helm-dash-common-docsets '("Ruby on Rails" "Ruby" "Haskell"))
+  ;;   (add-hook 'ruby-mode-hook 'tm/dash-hook)
+  ;;   (add-hook 'haskell-mode-hook 'tm/dash-hook)
+  )
+;; helm-tramp
+(setq tramp-default-method "ssh")
+(defalias 'exit-tramp 'tramp-cleanup-all-buffers)
+(define-key global-map (kbd "C-c t") 'helm-tramp)
 
 ;; avy / ace-jump stuff
 (avy-setup-default)
@@ -370,8 +404,10 @@ If the new path's directories does not exist, create them."
 ;; (add-hook 'after-save-hook 'smeargle)
 
 ;; github
-(require 'magit-gh-pulls)
-(add-hook 'magit-mode-hook 'turn-on-magit-gh-pulls)
+(use-package magithub
+  :ensure t
+  :after magit
+  :config (magithub-feature-autoinject t))
 (global-set-key (kbd "C-c g o") 'github-browse-file)
 (global-set-key (kbd "C-c g l") 'git-link)
 
@@ -382,15 +418,12 @@ If the new path's directories does not exist, create them."
 (helm-projectile-on)
 ;; projectile-rails
 (add-hook 'projectile-mode-hook 'projectile-rails-on)
-;; tempfix for bug caused by projectile moving to global mode
-(define-globalized-minor-mode projectile-rails-global-mode
-  projectile-rails-mode
-  projectile-rails-on)
 (projectile-rails-global-mode)
 
 ;; neotree setup
 (use-package neotree
   :ensure t
+  :defer t
   :config
   (setq neo-theme (if window-system 'icons 'arrow))
   (setq neo-smart-open t)
@@ -425,6 +458,46 @@ If the new path's directories does not exist, create them."
 ;; auto-revert to tail logs
 (add-to-list 'auto-mode-alist '("\\.log\\'" . auto-revert-mode))
 
+;; ========================================
+;; Hydra
+;; ========================================
+(use-package hydra
+  :ensure t)
+
+(global-set-key                         ; simple tester for package
+ (kbd "C-c u")
+ (defhydra utils (:color red)
+   "utils"
+   ("+" text-scale-increase "in")
+   ("-" text-scale-decrease "out")
+   ("s" flyspell-mode "flyspell")
+   ("f" flycheck-mode "flycheck")
+   ("r" (lambda () (interactive) (rvm-activate-corresponding-ruby)) "rvm")
+   ("b" bundle-install "bundle")
+   ))
+
+(global-set-key
+ (kbd "C-c j")
+ (defhydra navigation (:color red)
+   "navigation"
+   ("l" forward-char "forward")
+   ("h" backward-char "backward")
+   ("k" (lambda () (interactive) (forward-line -1)) "up")
+   ("j" forward-line "down")
+   ("w" forward-word "next-word")
+   ("e" (lambda () (interactive) (forward-word -1)) "last-word")
+   ("]" forward-paragraph "next-para")
+   ("[" (lambda () (interactive) (forward-paragraph -1)) "last-para")
+   ("," beginning-of-buffer "start")
+   ("." end-of-buffer "end")
+   ("f" forward-sexp "next-sexp")
+   ("b" backward-sexp "last-sexp")
+   ("g" goto-line "goto")
+   ("s" isearch-forward "search")
+   ("r" isearch-backward "search-back")
+   ("SPC" set-mark-command "mark")
+   ("'" avy-goto-char-2 "goto-char")))
+
 ;; smartparens-mode
 (package-initialize) ; not picking up smart-parens in the load-path
 (add-to-list 'load-path "~/.emacs.d/elpa/")
@@ -434,6 +507,8 @@ If the new path's directories does not exist, create them."
 (sp-with-modes '(web-mode)
   (sp-local-pair "<" ">")
   (sp-local-pair "<%" "%>"))
+(require 'web-mode-edit-element)
+(add-hook 'web-mode-hook 'web-mode-edit-element-minor-mode)
 
 ;; load source code pro font
 (set-frame-font "Source Code Pro 13")
@@ -512,9 +587,13 @@ If the new path's directories does not exist, create them."
          exec-path)))
 
 ;; which key mode
-(require 'which-key)
-(which-key-mode)
-(global-set-key [f5] 'which-key-show-top-level)
+;; (require 'which-key)
+;; (which-key-mode)
+;; (global-set-key [f5] 'which-key-show-top-level)
+(use-package which-key
+  :config
+  (which-key-mode)
+  (bind-key* [f5] 'which-key-show-top-level))
 
 ;; add color to compilation buffers
 (require 'ansi-color)
@@ -530,12 +609,18 @@ If the new path's directories does not exist, create them."
 (global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
 (global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
 
-;; autocomplete
-(require 'auto-complete)
-(require 'auto-complete-config) ; default config
-(ac-config-default)
-(setq ac-ignore-case nil)
-;; (add-to-list 'ac-modes 'ruby-mode)
+;; ;; autocomplete
+;; (require 'auto-complete)
+;; (require 'auto-complete-config) ; default config
+;; (ac-config-default)
+;; (setq ac-ignore-case nil)
+;; ;; (add-to-list 'ac-modes 'ruby-mode)
+
+;; company mode
+(use-package company
+  :ensure t
+  :config
+  '(add-to-list 'company-backends 'company-inf-ruby))
 
 ;; tramp
 (require 'tramp)
@@ -550,14 +635,26 @@ If the new path's directories does not exist, create them."
 (global-set-key [f6] 'flycheck-mode)
 
 ;; configure elfeed
-(global-set-key (kbd "C-c e") 'elfeed)
-(setq elfeed-feeds
-      '(("http://www.xenosystems.net/feed/" nrx xs)
-        ("http://www.xenosystems.net/comments/feed/" nrx xs)
-        "http://scholars-stage.blogspot.com/feeds/posts/default"
-        ("http://planet.emacsen.org/atom.xml" emacs)
-        ("https://meaningness.com/feeds" meaningness)
-        ("http://www.ribbonfarm.com/feed/" ribbonfarm)))
+(use-package elfeed
+  :ensure t
+  :defer t
+  :init
+  (require 'elfeed-goodies)
+  (elfeed-goodies/setup)
+  (global-set-key (kbd "C-c e") 'elfeed)
+  (setq elfeed-feeds
+        '(("http://www.xenosystems.net/feed/" nrx xs pol)
+          ("http://www.xenosystems.net/comments/feed/" nrx xs)
+          ("http://scholars-stage.blogspot.com/feeds/posts/default" pol)
+          ("http://planet.emacsen.org/atom.xml" emacs development)
+          ("http://planet.haskell.org/rss20.xml" haskell development fp)
+          ("https://kseo.github.io/rss.xml" haskell development fp)
+          ("http://www.kovach.me/rss.xml" haskell fp development)
+          ("https://lexi-lambda.github.io/feeds/all.rss.xml" development fp)
+          ("https://meaningness.com/feeds" meaningness pol)
+          ("http://www.ribbonfarm.com/feed/" ribbonfarm pol)
+          ("http://thearchdruidreport.blogspot.com/feeds/posts/default" archdruid pol)
+          ("https://8thlight.com/blog/feed/rss.xml" 8thlight fp development))))
 
 ;; web-mode
 (require 'web-mode)
@@ -566,6 +663,7 @@ If the new path's directories does not exist, create them."
 (add-to-list 'auto-mode-alist '("\\.[agj]sp\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.as[cp]x\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.erb\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.ejs\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.mustache\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.djhtml\\'" . web-mode))
 ; hooks
@@ -580,11 +678,15 @@ If the new path's directories does not exist, create them."
 ;; js config
 (setq js-indent-level 2)
 
+;; ========================================
 ;; ruby config
-; rbenv mode
-(require 'rbenv)
-(global-rbenv-mode)
-(setq rbenv-modeline-function 'rbenv--modeline-plain)
+;; ========================================
+
+;; (use-package chruby
+;;   :ensure t)
+(use-package rvm
+  :ensure t
+  :config (rvm-use-default))
 
 ; ruby-mode hook
 (defun ruby-mode-hook ()
@@ -601,12 +703,15 @@ If the new path's directories does not exist, create them."
                                (setq c-tab-always-indent nil)
                                (setq ruby-insert-encoding-magic-comment nil)
                                (setq rake-completion-system 'helm)
-                               (rbenv-use-corresponding)
+                               (rvm-activate-corresponding-ruby)
                                (require 'inf-ruby)
                                (require 'ruby-compilation))))
+
 ;; (add-hook 'ruby-mode-hook 'git-gutter-mode)
 (add-hook 'ruby-mode-hook 'whitespace-cleanup-mode)
 (add-hook 'ruby-mode-hook 'column-enforce-mode)
+(add-hook 'ruby-mode-hook 'ruby-refactor-mode-launch)
+;; (add-hook 'ruby-mode-hook 'robe-mode)
 
 ;; rspec snippets
 (require 'rspec-mode)
@@ -621,21 +726,18 @@ If the new path's directories does not exist, create them."
 (add-to-list 'auto-mode-alist '("\\.yaml$" . yaml-mode))
 (add-to-list 'auto-mode-alist '("\\.yml.example$" . yaml-mode))
 
-;; Robe setup
-;; (add-hook 'ruby-mode-hook 'robe-mode)
-;; (add-hook 'robe-mode-hook 'ac-robe-setup)
-;; (defadvice inf-ruby-console-auto (before activate-rvm-for-robe activate)
-;;   (rbenv-use-corresponding))
-
-;; haskell config
+;; ========================================
+;; Haskell config
+;; ========================================
 (setq exec-path (append exec-path '("/home/timothymillar/.cabal/bin")))
 (add-hook 'haskell-mode-hook 'interactive-haskell-mode)
-;; (autoload 'ghc-init "ghc" nil t)
-;; (autoload 'ghc-debug "ghc" nil t)
+(use-package intero
+  :ensure t
+  :defer t)
+(add-hook 'haskell-mode-hook 'intero-mode)
 (add-hook 'haskell-mode-hook '(lambda ()
-                                (setq haskell-indentation-mode t)
-                                ;; (ghc-init)
-                                ))
+                                (setq haskell-indentation-mode t)))
+
 ; keybindings
 (eval-after-load 'haskell-mode
   '(define-key haskell-mode-map [f8] 'haskell-navigate-imports))
@@ -653,6 +755,124 @@ If the new path's directories does not exist, create them."
 ; Unicode symbols
 (defvar haskell-font-lock-symbols)
 (setq haskell-font-lock-symbols t)
+
+;; racket config
+(add-hook 'racket-mode-hook
+          (lambda ()
+            (local-unset-key "<f5>")))
+
+;; lisp-modes
+(add-hook 'emacs-lisp-mode-hook (lambda () (lispy-mode 1)))
+(add-hook 'racket-mode-hook (lambda () (lispy-mode 1)))
+
+;; ========================================
+;; Clojure setup
+;; ========================================
+(use-package clojure-mode
+  :ensure t
+  :init
+  (defconst clojure--prettify-symbols-alist
+    '(("fn"   . ?λ)
+      ("__"   . ?⁈)))
+  :config
+  (add-hook 'clojure-mode-hook 'global-prettify-symbols-mode)
+  (add-hook 'clojure-mode-hook (lambda () (lispy-mode 1))))
+
+(use-package cider
+  :ensure t
+  :defer t
+  :commands (cider cider-connect cider-jack-in))
+
+(use-package 4clojure
+  :defer t
+  :init
+  (bind-key "<f12> a" '4clojure-check-answers clojure-mode-map)
+  (bind-key "<f12> n" '4clojure-next-question clojure-mode-map)
+  (bind-key "<f12> p" '4clojure-previous-question clojure-mode-map)
+
+  :config
+  (defadvice 4clojure-open-question (around 4clojure-open-question-around)
+     "Start a cider/nREPL connection if one hasn't already been started when
+     opening 4clojure questions."
+     ad-do-it
+     (unless cider-current-clojure-buffer
+       (cider-jack-in))))
+
+(defun endless/4clojure-check-and-proceed ()
+  "Check the answer and show the next question if it worked."
+  (interactive)
+  (unless
+      (save-excursion
+        ;; Find last sexp (the answer).
+        (goto-char (point-max))
+        (forward-sexp -1)
+        ;; Check the answer.
+        (cl-letf ((answer
+                   (buffer-substring (point) (point-max)))
+                  ;; Preserve buffer contents, in case you failed.
+                  ((buffer-string)))
+          (goto-char (point-min))
+          (while (search-forward "__" nil t)
+            (replace-match answer))
+          (string-match "failed." (4clojure-check-answers))))
+    (4clojure-next-question)))
+
+(defadvice 4clojure/start-new-problem
+    (after endless/4clojure/start-new-problem-advice () activate)
+    ;; Prettify the 4clojure buffer.
+  (goto-char (point-min))
+  (forward-line 2)
+  (forward-char 3)
+  (fill-paragraph)
+  ;; Position point for the answer
+  (goto-char (point-max))
+  (insert "\n\n\n")
+  (forward-char -1)
+  ;; Define our key.
+  (local-set-key (kbd "M-j") #'endless/4clojure-check-and-proceed))
+
+;; Mongo
+(use-package inf-mongo
+  :ensure t
+  :defer t
+  :init
+  (setq inf-mongo-command "/usr/bin/mongo 127.0.0.1:27017")
+  :bind (("C-c m" . inf-mongo)))
+
+;; Java
+;; (require 'meghanada)
+;; (add-hook 'java-mode-hook
+;;           (lambda ()
+;;             (meghanada-mode t)
+;;             (setq c-basic-offset 2)))
+
+(use-package meghanada
+  :ensure t
+  :defer t
+  :config
+  (add-hook 'java-mode-hook
+          (lambda ()
+            (meghanada-mode t))))
+
+;; Python
+(use-package virtualenvwrapper
+  :ensure t
+  :defer t
+  :init
+  (setq venv-location '("/home/timothymillar/my-stuff/data-sci/fast-ai-support/week2/cs231n/classification"
+                        "/home/timothymillar/my-stuff/data-sci/fast-ai-course"))
+  )
+
+;; ========================================
+;; skewer-mode
+;; ========================================
+(use-package skewer-mode
+  :ensure t
+  :defer t
+  :config
+  (add-hook 'js2-mode-hook 'skewer-mode)
+  (add-hook 'css-mode-hook 'skewer-css-mode)
+  (add-hook 'html-mode-hook 'skewer-html-mode))
 
 ;; (spaceline-toggle-projectile-root-on)
 ;; (spaceline-toggle-version-control-on)
@@ -691,7 +911,7 @@ If the new path's directories does not exist, create them."
  '(haskell-process-auto-import-loaded-modules t)
  '(haskell-process-log t)
  '(haskell-process-suggest-remove-import-lines t)
- '(haskell-process-type (quote ghci))
+ '(haskell-process-type (quote auto))
  '(haskell-tags-on-save t)
  '(projectile-enable-idle-timer t)
  '(projectile-idle-timer-hook nil)
@@ -713,3 +933,4 @@ If the new path's directories does not exist, create them."
 
 (put 'narrow-to-region 'disabled nil)
 (put 'narrow-to-page 'disabled nil)
+(put 'upcase-region 'disabled nil)

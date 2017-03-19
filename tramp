@@ -1,4 +1,4 @@
-;; -*- emacs-lisp -*- <16/10/19 17:37:29 /home/timothymillar/.emacs.d/tramp>
+;; -*- emacs-lisp -*- <17/02/20 01:06:39 /home/timothymillar/.emacs.d/tramp>
 ;; Tramp connection history.  Don't change this file.
 ;; You can delete it, forcing Tramp to reapply the checks.
 
@@ -224,9 +224,8 @@
   ("perl" "\\perl")
   ("ls" "/bin/ls --color=never")
   ("readlink" "\\readlink")
-  ("git" "\\git"))
- (["ssh" "app01.sandbox3.247.otbeach.com" "deploy_myotb" nil nil]
-  nil)
+  ("git" "\\git")
+  ("ls-dired" t))
  (["scp" "deploy_myotb" "app01.sandbox3.247.otbeach.com" nil nil]
   ("locale" "LC_ALL=en_US.utf8")
   ("uname" "Linux 2.6.32-39-pve")
@@ -246,8 +245,6 @@
   ("ls" "/bin/ls --color=never")
   ("ls-dired" t)
   ("readlink" "\\readlink"))
- (["scp" nil "deploy_app01.sandbox3.247.otbeach.com" nil nil]
-  nil)
  (["scp" nil "app01.sandbox3.247.otbeach.com" nil nil]
   ("locale" "LC_ALL=en_US.utf8")
   ("uname" "Linux 2.6.32-39-pve")
@@ -266,4 +263,42 @@
   ("ls" "/bin/ls --color=never")
   ("ls-dired" t)
   ("readlink" "\\readlink")
-  ("git" "\\git")))
+  ("git" "\\git"))
+ (["ssh" "deploy_www" "app01.sandbox3.247.otbeach.com" nil nil]
+  ("locale" "LC_ALL=en_US.utf8")
+  ("uname" "Linux 2.6.32-39-pve")
+  ("test" "test")
+  ("remote-path"
+   ("/bin" "/usr/bin" "/sbin" "/usr/sbin" "/usr/local/bin" "/usr/local/sbin"))
+  ("remote-shell" "/bin/sh")
+  ("file-exists" "test -e")
+  ("stat" "\\stat")
+  ("id" "/usr/bin/id")
+  ("gid-integer" 3000)
+  ("gid-string" "deploy")
+  ("perl-file-spec" t)
+  ("perl-cwd-realpath" t)
+  ("perl" "\\perl")
+  ("readlink" "\\readlink")
+  ("ls" "/bin/ls --color=never")
+  ("ls-dired" t))
+ (["ssh" "deploy_myotb" "app01.sandbox3.247.otbeach.com" nil nil]
+  ("locale" "LC_ALL=en_US.utf8")
+  ("uname" "Linux 2.6.32-39-pve")
+  ("test" "test")
+  ("remote-path"
+   ("/bin" "/usr/bin" "/sbin" "/usr/sbin" "/usr/local/bin" "/usr/local/sbin"))
+  ("remote-shell" "/bin/sh")
+  ("file-exists" "test -e")
+  ("stat" "\\stat")
+  ("id" "/usr/bin/id")
+  ("gid-integer" 3000)
+  ("gid-string" "deploy")
+  ("perl-file-spec" t)
+  ("perl-cwd-realpath" t)
+  ("perl" "\\perl")
+  ("readlink" "\\readlink")
+  ("ls" "/bin/ls --color=never")
+  ("ls-dired" t))
+ (["ssh" nil "ssh" nil nil]
+  nil))

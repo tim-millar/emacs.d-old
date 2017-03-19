@@ -13,9 +13,9 @@ alias oo find-file-other-window $1
 alias emacs find-file $1
 alias ff find-file $1
 alias ec find-file $1
-alias e find-file
-alias l ls $*
-alias ee find-file-other-window
-alias g git
-alias gb git branch
 alias gl magit-log-all
+alias gb git branch
+alias g git
+alias ee find-file-other-window
+alias l ls $*
+alias e find-file

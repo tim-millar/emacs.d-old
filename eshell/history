@@ -1,128 +1,128 @@
-message RAILS_ENV
 ls
-bundle exec cap sandbox deploy
 ls
-which top
+bundle exec rails generate --help
 ls
-which bundle
-which dstat
+bundle exec rails generate --help
+bundle exec rails generate controller --help
+bundle exec rails generate controller Instrument show
 ls
-runhaskell helloworld.has
-runhaskell helloworld.hs
-runhaskell helloworld.hs
-stack templates
-stack new hello-world yesod-minimal
 l
-cd hello-world/
+ll
+l .venv/bin
+which python
+source venv/bin/activate
+source .venv/bin/activate
+ls
+which python
+ls
 l
-stack build yesod-bin cabal-install --install-ghc
-stack runghc
-stack runghc helloworld.hs
-stack build yesod-bin cabal-install --install-ghc
-stack build
-stack build
-stack build
-stack build
+ls
+gem --help
+ls
+bundle gem test
+l
+cd tes
+ls
+rm -rf test
+l
+bundle init
+l
+ls
+ls
+l
+ll
+bundle exec rspec --init
+bundle exec --help
+ll
+which rspec
+bundle exec rspec
+ls
+bundle exec rspec
+ls
+ls
+cdp
+bundle exec rspec spec/sms/response_spec.rb 
+bundle exec rspec spec/sms/response_spec.rb 
+bundle exec rspec spec
+bundle exec rspec spec
+ruby -v
+ls
+ruby -v
+ls
+cucumber --help
+ls
+pwd
+ls
+pwd
+ls
+ruby -v
+rvm --help
+rvm list
+bundle exec spec spec
+ls
+pwd
+cd ../../../
+cd ../
+l
+cd fast-ai-course/
+l
+ll
+pwd
+cd -
+cd -
+cd -2
+l
 cd ..
-stack new hello-world yesod-sqlite && cd my-project
-l
-cd hello-world/
-stack build yesod-bin cabal-install --install-ghc
+ll
 cd ..
-l
-stack build yesod persistent-sqlite yesod-static esqueleto
-l
-ls -al
-stack runghc helloworld.hs
-stack runghc helloworld.hs
-stack runghc helloworld.hs
+ll
+cd ../
+ll
+ll
 ls
-cd ...
-l
-cd otb_myotb_
-cd otb_myotb_app/
-l
-gfb
-git checkout upstream
-git pull
-bundle exec rake db:migrate
-bundle exec rake db:test:prepare
-git checkout personalisation
-gst
-git checkout personalisation
-git checkout personalisation
-git merge upstream
-gfb
-git branch -D bug/fix-cucumber-truncation-issue
-gfb
-git branch -D feature/reactions-hotel-table
-gfb
+cdp
+bundle exec spec spec/models/failed_collection_spec.rb 
+bundle exec spec spec/models/failed_collection_spec.rb 
+bundle exec spec spec/models/failed_collection_spec.rb 
+bundle exec spec spec/models/failed_collection_spec.rb 
+bundle exec spec spec/models/failed_collection_spec.rb 
+bundle exec spec spec/models/failed_collection_spec.rb 
+bundle exec spec spec/models/failed_collection_spec.rb 
+bundle exec spec spec/models/failed_collection_spec.rb 
 ls
-which top
+pwd
 ls
-mix phoenix.new blog_phoenix
-cd blog_phoenix/
-mix phoenix.server
-mix deps.get
-mix local.hex
-mix phoenix.server
-l
-mix clean --all
-mix deps.get
-mix phoenix.server
-mix phoenix.gen html Post posts title:string body:text
-mix phoenix.gen.html Post posts title:string body:text
-mix ecto.create
-mix ecto.migrate
-mix phoenix.routes
-mix ecto.create
-mix ecto.create
-mix ecto.create
-mix ecto.migrate
-mix phoenix.routes
-mix phoenix.routes
-mix ecto.create
-mix ecto.migrate
-mix phoenix.routes
-mix phoenix.server
+pwd
+cdp
 ls
-gtags
+cdp
+bundle exec spec spec/models/failed_collection_spec.rb 
 ls
-ruby exit_codes.rb
+cdp
+bundle exec spec spec/models/balance_payment_spec.rb 
+bundle exec spec spec/lib/balance_collector_spec.rb 
+bundle exec spec spec/lib/balance_collector_spec.rb 
+bundle exec spec spec/lib/balance_collector_spec.rb 
+bundle exec spec spec/lib/balance_collector_spec.rb 
+sudo apt-get install stow
+bundle exec spec spec/lib/balance_collector_spec.rb 
 ls
-ruby exit_codes.rb
+cd
+cd -
+cdp
+bundle exec spec spec/models/failed_collection_spec.rb 
+bundle exec spec spec/models/failed_collection_spec.rb 
+bundle exec spec spec/models/failed_collection_spec.rb 
+bundle exec spec spec/models/failed_collection_spec.rb 
+bundle exec spec spec/models/failed_collection_spec.rb 
+bundle exec spec spec/models/failed_collection_spec.rb 
+bundle exec spec spec/models/failed_collection_spec.rb 
+bundle exec spec spec/models/failed_collection_spec.rb 
+bundle exec spec spec/models/failed_collection_spec.rb 
+Faraday: you may want to install system_timer for reliable timeouts
+Faraday: you may want to install system_timer for reliable timeouts
+bundle exec spec spec/models/failed_collection_spec.rb 
 ls
+kg -u timmillar -c dogs-vs-cats-redux-kernels-edition
 ls
-ls
-ruby exit_codes.rb
-ruby exit_codes.rb
-ruby exit_codes.rb
-ruby exit_codes.rb
-ruby exit_codes.rb
-ruby exit_codes.rb
-ruby exit_codes.rb
-ruby exit_codes.rb
-ruby exit_codes.rb
-ruby exit_codes.rb
-ls
-stack runghc helloworld.hs
-stack runghc -ddump-splies helloworld.hs
-stack runghc -ddump-splices helloworld.hs
-stack build -ddump-splices helloworld.hs
-stack build links.hs
-stack runghc links.hs
-ls
-which yesod
-stack runghc app.hs
-stack runghc app.hs
-ls
-git clone https://github.com/rakanalh/emacs-dashboard ~/.emacs.d/dashboard
-ls
-bundle gem rhino --bin --test=rspec
-ruby friendly_processes.rb 
-ruby friendly_processes.rb 
-ruby friendly_processes.rb 
-ruby friendly_processes.rb 
-ruby friendly_processes.rb 
-ruby friendly_processes.rb 
-ruby friendly_processes.rb 
+kg -u timmillar -c dogs-vs-cats-redux-kernels-edition
